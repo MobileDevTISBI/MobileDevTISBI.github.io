@@ -1,4 +1,355 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MobileDevTisbi]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>MobileDevTisbi</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 19 Sep 2025 18:18:06 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 19 Sep 2025 18:18:04 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Тема №6. Git, GitHub]]></title><description><![CDATA[В этой теме вы познакомитесь с системой контроля версий Git и платформой GitHub — основными инструментами для управления кодом в командной разработке. Изучите базовые команды для отслеживания изменений, создания коммитов и взаимодействия с удалённым репозиторием. Это необходимо для совместной работы над мобильными приложениями, а также для хранения и публикации вашего кода.
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MobileDevTisbi]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>MobileDevTisbi</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 24 Sep 2025 09:45:55 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 24 Sep 2025 09:45:44 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Практика №4. Преобразование типов]]></title><description><![CDATA[Вот адаптированное задание в едином стиле с вашим первым примером — с чёткой структурой, форматированием и логикой описания:В рамках этого задания вам необходимо модернизировать скрипт task4.js, который должен запускаться при помощи Node.js. Задание обязано быть опубликовано в существующем приватном репозитории организации GitHub с названием Группа_Фамилия_task-3-7.task4.jsconst booleanValue = false;
+const numberValue = 20.20;
+const stringValue = "30"; // Менять код ниже
+Вам необходимо преобразовать значения переменных следующим образом: booleanValue — преобразовать в строку. numberValue — преобразовать в целое число, округлив в меньшую сторону (вниз). stringValue — преобразовать в число (числовой тип). После преобразования выведите в консоль исходное и преобразованное значение каждой переменной, а также тип данных каждого результата (используйте typeof). На выполнение выделяется 1 практическая пара.
+Градация баллов после дедлайна: 1 пара: 0%
+]]></description><link>задания/секция-1.-javascript/практика-№4.-преобразование-типов.html</link><guid isPermaLink="false">Задания/Секция 1. JavaScript/Практика №4. Преобразование типов.md</guid><pubDate>Wed, 24 Sep 2025 09:43:54 GMT</pubDate></item><item><title><![CDATA[Практика №3. Вывод информации о себе в консоль.]]></title><description><![CDATA[В рамках этого задания вам необходимо создать скрипт task3.js, который должен запускаться при помощи NodeJs.Задание обязано быть опубликовано в новом приватном репозитории организации GitHub с названием Группа_Фамилия_task-3-7.(пусто)Вам необходимо создать следующие переменные:
+год рождения
+ваш возраст
+ваше имя
+работаете ли вы?
+Вам необходимо вывести в консоль значения переменных и их типов данных.
+Вы должны поменять значение возраста и вывести в консоль новый возраст.Используйте нужные ключевые слова и типы данных, при проверке вам необходимо обосновать выбор.На выполнение выделяется 1 практическая пара.
+Градация баллов после дедлайна:
+1 пара: 50%
+]]></description><link>задания/секция-1.-javascript/практика-№3.-вывод-информации-о-себе-в-консоль..html</link><guid isPermaLink="false">Задания/Секция 1. JavaScript/Практика №3. Вывод информации о себе в консоль..md</guid><pubDate>Wed, 24 Sep 2025 09:39:50 GMT</pubDate></item><item><title><![CDATA[Практика №2. Использование git, github]]></title><description><![CDATA[В рамках этого задания вам необходимо загрузить код "Практика №1" в github организацию в виде нового репозитория.(пусто)Регистрируйтесь на <a data-tooltip-position="top" aria-label="https://github.com" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com" target="_self">GitHub</a>, затем отправьте почту в <a data-tooltip-position="top" aria-label="https://forms.yandex.ru/u/68c460fe90fa7b550e338c06" rel="noopener nofollow" class="external-link is-unresolved" href="https://forms.yandex.ru/u/68c460fe90fa7b550e338c06" target="_self">яндекс формы</a>.
+Вам должно будет прийти письмо с приглашением на вступление (Проверяйте указанную почту и/или оповещения в GitHub).Необходимо создать ПРИВАТНЫЙ репозиторий ВНУТРИ ОРГАНИЗАЦИИ.
+Название по следующему шаблону:
+ГРУППА_ФАМИЛИЯ_НАЗВАНИЕ-ЗАДАНИЯ
+Например:
+IS231-1_Ivanov_task1.На выполнение выделяется 1 практическая пара.
+Градация баллов после дедлайна:
+1 пара: 0%
+]]></description><link>задания/секция-1.-javascript/практика-№2.-использование-git,-github.html</link><guid isPermaLink="false">Задания/Секция 1. JavaScript/Практика №2. Использование git, github.md</guid><pubDate>Wed, 24 Sep 2025 09:34:19 GMT</pubDate></item><item><title><![CDATA[Рекурсия]]></title><description><![CDATA[Рекурсия — это когда функция вызывает саму себя внутри своего тела. Это способ решить задачу, разбив её на более мелкие подзадачи того же типа.Она удобна, когда задача естественно разбивается на аналогичные подзадачи — например, обход дерева каталогов, вычисление чисел Фибоначчи, работа с вложенными структурами данных.Базовый случай — это условие, при котором рекурсия перестаёт вызывать саму себя и начинает возвращать результат. Рекурсия работает по принципу «разделяй и властвуй»: задача разбивается на меньшие копии самой себя. Но в какой-то момент этот процесс должен остановиться — иначе не будет точки входа в обратный путь.Факториал числа n — это произведение всех натуральных чисел от 1 до n.
+Обозначается как n!
+Пример: 5! = 5 × 4 × 3 × 2 × 1 = 120Рекурсивное определение:
+n! = n × (n-1)!
+Базовый случай: 0! = 1Реализация:function factorial(n) { if (n === 0 || n === 1) { return 1; // базовый случай } return n * factorial(n - 1); // рекурсивный вызов
+} console.log(factorial(5)); // 120
+Здесь factorial(5) вызывает factorial(4), который вызывает factorial(3) и так далее, пока не дойдёт до factorial(1). После этого цепочка возвратов начинает вычислять результат снизу вверх.Каждый рекурсивный вызов занимает память в стеке вызовов. Если рекурсия слишком глубокая — стек переполняется, и браузер или приложение падает с ошибкой Stack Overflow.Пример опасного случая:function infiniteRecursion() { return infiniteRecursion(); // вызов без условия остановки
+} infiniteRecursion(); // приведёт к Stack Overflow
+Поэтому всегда убедитесь, что рекурсия имеет базовый случай, который остановит вызовы, и что с каждым шагом вы приближаетесь к нему.Используйте рекурсию только тогда, когда она делает код понятнее. В большинстве случаев лучше заменять её циклами — они эффективнее и безопаснее.]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№9/рекурсия.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №9/Рекурсия.md</guid><pubDate>Wed, 24 Sep 2025 09:13:15 GMT</pubDate></item><item><title><![CDATA[Возвращаемое значение]]></title><description><![CDATA[Функция может возвращать результат с помощью оператора return. Это значение передаётся обратно в место, откуда функция была вызвана.function calculateDiscount(price, discountPercent) { return price - (price * discountPercent / 100);
+} const finalPrice = calculateDiscount(1000, 15);
+console.log(finalPrice); // 850
+Здесь return отправляет вычисленную сумму обратно в переменную finalPrice.Если в функции нет return, она возвращает undefined:function logMessage(message) { console.log(message);
+} const result = logMessage('Привет');
+console.log(result); // undefined
+Даже если функция что-то делает — например, выводит в консоль — она не возвращает ничего, если не указан return.return можно использовать для преждевременного завершения работы функции — это полезно для проверки условий.Пример: проверка наличия данных перед обработкойfunction updateUserProfile(userData) { if (!userData || !userData.name) { return; // выход, если данные не переданы или нет имени } // Эта часть выполнится только если условия выше не сработали console.log('Обновление профиля для:', userData.name); // ... логика обновления
+} updateUserProfile(); // ничего не делает, функция завершается на return
+updateUserProfile({ name: 'Анна' }); // обновление профиля
+Такой подход упрощает код: вы не пишете вложенные if-else, а сразу отсеиваете невалидные случаи.function loadUserSettings() { if (!userIsAuthenticated) { return; // не продолжаем, если пользователь не авторизован } const settings = api.getSettings(); updateUI(settings);
+}
+Здесь return предотвращает выполнение дорогостоящих операций — обращение к API, обновление интерфейса — если это бессмысленно. Это улучшает производительность и снижает риск ошибок.]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№9/возвращаемое-значение.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №9/Возвращаемое значение.md</guid><pubDate>Wed, 24 Sep 2025 09:09:08 GMT</pubDate></item><item><title><![CDATA[Параметры и аргументы]]></title><description><![CDATA[Параметры — это имена переменных, которые указываются в скобках при объявлении функции. Они определяют, какие данные функция ожидает получить.Аргументы — это реальные значения, которые передаются функции при её вызове.Пример:function greet(name, age) { // name и age — параметры return 'Привет, ' + name + ', тебе ' + age + ' лет';
+} console.log(greet('Анна', 25)); // 'Анна' и 25 — аргументы
+Здесь name и age — параметры. При вызове greet('Анна', 25) передаются аргументы 'Анна' и 25. Каждый аргумент присваивается соответствующему параметру.Если аргументов меньше, чем параметров — остальные получат значение undefined:console.log(greet('Иван')); // Привет, Иван, тебе undefined лет
+Чтобы избежать undefined, можно задать значения по умолчанию:function greet(name, age = 18) { return 'Привет, ' + name + ', тебе ' + age + ' лет';
+} console.log(greet('Иван')); // Привет, Иван, тебе 18 лет
+console.log(greet('Мария', 22)); // Привет, Мария, тебе 22 лет
+Значения по умолчанию работают для любого параметра — не только последнего:function createTask(title = 'Новая задача', priority = 'средний', completed = false) { return { title, priority, completed };
+} console.log(createTask()); // { title: 'Новая задача', priority: 'средний', completed: false }
+console.log(createTask('Удалить кеш')); // { title: 'Удалить кеш', priority: 'средний', completed: false }
+Это особенно полезно в приложениях, где параметры часто не обязательны — например, настройки темы, уведомления, таймауты. Вы можете задать разумные значения по умолчанию и не проверять каждый аргумент вручную.]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№9/параметры-и-аргументы.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №9/Параметры и аргументы.md</guid><pubDate>Wed, 24 Sep 2025 09:07:06 GMT</pubDate></item><item><title><![CDATA[Стрелочные функции (Arrow Function)]]></title><description><![CDATA[const multiply = (a, b) =&gt; { return a * b;
+};
+Она состоит из двух частей: параметры в скобках, затем стрелка =&gt;, и тело функции в фигурных скобках.Если параметр один — скобки можно опустить:const square = x =&gt; x * x;
+Если тело функции — одно выражение — фигурные скобки и return можно опустить:const formatName = (first, last) =&gt; first + ' ' + last;
+Это называется краткой формой. Она возвращает результат выражения автоматически.Стрелочные функции часто называют анонимными, потому что они не имеют имени в своём определении. Их имя — это переменная, в которую они присваиваются.Стрелочные функции идеальны для простых преобразований и коллбэков — особенно в мобильных приложениях, где код должен быть лаконичным.const tasks = [ { id: 1, title: 'Починить экран', completed: false }, { id: 2, title: 'Обновить приложение', completed: true }
+]; const pendingTasks = tasks.filter(task =&gt; !task.completed);
+console.log(pendingTasks); // [{ id: 1, title: 'Починить экран', completed: false }]
+Здесь стрелочная функция task =&gt; !task.completed передаётся в filter. Она короткая, читаемая и выполняет одну задачу — проверяет, не выполнена ли задача.Пример: обработчик клика в React Native или веб-интерфейсеbutton.addEventListener('click', () =&gt; { showNotification('Данные сохранены');
+}); Важно: стрелочные функции не имеют собственного this. Это полезно в классах и коллбэках, но не всегда очевидно для новичков — пока достаточно знать, что для простых операций они удобны, а для сложной логики с this лучше использовать функциональные выражения или объявления.
+]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№9/стрелочные-функции-(arrow-function).html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №9/Стрелочные функции (Arrow Function).md</guid><pubDate>Wed, 24 Sep 2025 09:04:11 GMT</pubDate></item><item><title><![CDATA[Тема №9. Функции в JavaScript]]></title><description><![CDATA[В этой теме вы изучите функции — основной механизм инкапсуляции логики в JavaScript. Поймёте, как объявлять, вызывать и передавать данные через функции, а также познакомитесь с разными способами их определения. Это фундамент для организации кода в любом приложении, включая мобильные, где функции используются для обработки событий, работы с данными и управления состоянием интерфейса.
+<a data-href="Что такое функция" href="материалы/подтемы/секция-1.-javascript/тема-№9/что-такое-функция.html" class="internal-link" target="_self" rel="noopener nofollow">Что такое функция</a>
+<br><a data-href="Объявление функции (Function Declaration)" href="материалы/подтемы/секция-1.-javascript/тема-№9/объявление-функции-(function-declaration).html" class="internal-link" target="_self" rel="noopener nofollow">Объявление функции (Function Declaration)</a>
+<br><a data-href="Функциональное выражение (Function Expression)" href="материалы/подтемы/секция-1.-javascript/тема-№9/функциональное-выражение-(function-expression).html" class="internal-link" target="_self" rel="noopener nofollow">Функциональное выражение (Function Expression)</a>
+<br><a data-href="Стрелочные функции (Arrow Function)" href="материалы/подтемы/секция-1.-javascript/тема-№9/стрелочные-функции-(arrow-function).html" class="internal-link" target="_self" rel="noopener nofollow">Стрелочные функции (Arrow Function)</a>
+<br><a data-href="Параметры и аргументы" href="материалы/подтемы/секция-1.-javascript/тема-№9/параметры-и-аргументы.html" class="internal-link" target="_self" rel="noopener nofollow">Параметры и аргументы</a>
+<br><a data-href="Возвращаемое значение" href="материалы/подтемы/секция-1.-javascript/тема-№9/возвращаемое-значение.html" class="internal-link" target="_self" rel="noopener nofollow">Возвращаемое значение</a>
+<br><a data-href="Рекурсия" href="материалы/подтемы/секция-1.-javascript/тема-№9/рекурсия.html" class="internal-link" target="_self" rel="noopener nofollow">Рекурсия</a>
+(Пусто)<br><a data-href="Тема №10. Область видимости в JavaScript" href="лекции/секция-1.-javascript/тема-№10.-область-видимости-в-javascript.html" class="internal-link" target="_self" rel="noopener nofollow">Тема №10. Область видимости в JavaScript</a>]]></description><link>лекции/секция-1.-javascript/тема-№9.-функции-в-javascript.html</link><guid isPermaLink="false">Лекции/Секция 1. JavaScript/Тема №9. Функции в JavaScript.md</guid><pubDate>Wed, 24 Sep 2025 09:02:32 GMT</pubDate></item><item><title><![CDATA[Функциональное выражение (Function Expression)]]></title><description><![CDATA[Функциональное выражение (Function Expression)Синтаксис функционального выражения:const calculateSum = function(a, b) { return a + b;
+};
+Здесь функция не объявляется как отдельная сущность с именем в области видимости. Вместо этого она создаётся как анонимная функция и присваивается переменной calculateSum.Главное отличие от объявления функции — отсутствие поднятия. Вы не можете вызвать функцию до её присваивания:console.log(calculateSum(2, 3)); // Ошибка: TypeError: calculateSum is not a function const calculateSum = function(a, b) { return a + b;
+};
+Это важно: функциональное выражение становится доступным только после строки, в которой оно присвоено.Использование: передача функции как аргументаЧасто функциональные выражения используются, когда функция передаётся в другую функцию — например, как коллбэк.Пример: обработка данных списка пользователейconst users = ['Анна', 'Иван', 'Мария']; const capitalizedUsers = users.map(function(name) { return name.charAt(0).toUpperCase() + name.slice(1);
+}); console.log(capitalizedUsers); // ['Анна', 'Иван', 'Мария']
+Здесь анонимная функция передаётся в метод map. Она будет вызвана для каждого элемента массива. Такой подход часто используется в мобильных приложениях при фильтрации, сортировке или преобразовании данных из API.Функциональные выражения также полезны, когда вы хотите создать функцию динамически или условно:let getGreeting; if (isMorning) { getGreeting = function() { return 'Доброе утро'; };
+} else { getGreeting = function() { return 'Добрый день'; };
+} console.log(getGreeting()); // зависит от условия
+]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№9/функциональное-выражение-(function-expression).html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №9/Функциональное выражение (Function Expression).md</guid><pubDate>Wed, 24 Sep 2025 09:01:30 GMT</pubDate></item><item><title><![CDATA[Объявление функции (Function Declaration)]]></title><description><![CDATA[Объявление функции (Function Declaration)Синтаксис объявления функции:function calculateSum(a, b) { return a + b;
+}
+Здесь calculateSum — имя функции, a и b — параметры. Функция вычисляет сумму и возвращает результат.Особенность функций, объявленных таким образом — поднятие (hoisting). Это значит, что JavaScript перемещает объявление функции в начало текущей области видимости при компиляции кода. Поэтому вы можете вызвать функцию до её объявления:// Это сработает!
+console.log(calculateSum(5, 3)); // 8 function calculateSum(a, b) { return a + b;
+}
+Это работает только с объявлениями функций. Функциональные выражения и стрелочные функции таким свойством не обладают.Пример: форматирование даты для отображения в интерфейсеfunction formatDateString(dateString) { const date = new Date(dateString); return date.toLocaleDateString('ru-RU', { day: 'numeric', month: 'long', year: 'numeric' });
+} console.log(formatDateString('2024-06-15')); // 15 июня 2024 г.
+Такая функция может использоваться в любом месте приложения, где нужно отобразить дату в понятном виде — например, в списке уведомлений или истории действий пользователя.]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№9/объявление-функции-(function-declaration).html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №9/Объявление функции (Function Declaration).md</guid><pubDate>Wed, 24 Sep 2025 08:29:38 GMT</pubDate></item><item><title><![CDATA[Что такое функция]]></title><description><![CDATA[Функция — это именованный блок кода, который выполняет определённую задачу. Её можно вызывать несколько раз, передавая разные данные, и она всегда будет вести себя одинаково.Без функций код становился бы дублирующимся и неуправляемым. Например, если нужно проверить, заполнено ли поле ввода в трёх разных местах приложения — без функции вы скопировали бы один и тот же код три раза. С функцией — один раз написали, три раза вызвали.Функции помогают структурировать код: разбивают большую задачу на маленькие, понятные части. Это делает его легче тестировать, читать и поддерживать.Пример: обработчик клика по кнопке в HTML&lt;button id="loginBtn"&gt;Войти&lt;/button&gt;
+function handleLoginClick() { const email = document.getElementById('email').value; if (email) { console.log('Почта введена, начинаем вход...'); } else { console.log('Введите почту'); }
+} document.getElementById('loginBtn').addEventListener('click', handleLoginClick);
+Здесь handleLoginClick — функция. Она не выполняется сразу, а ждёт, пока пользователь кликнет. Когда клик происходит — функция вызывается. Это делает интерфейс реактивным. Без функции вы не смогли бы отделить логику от события.]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№9/что-такое-функция.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №9/Что такое функция.md</guid><pubDate>Wed, 24 Sep 2025 08:22:35 GMT</pubDate></item><item><title><![CDATA[Циклы и производительность]]></title><description><![CDATA[Производительность циклов критична в JavaScript — особенно при обработке больших списков, частых обновлений или ресурсоёмких операций. Даже небольшая неоптимизированная операция внутри цикла может замедлить выполнение скрипта.Любая операция, которая не зависит от итерации, не должна выполняться на каждой итерации.const items = getLargeItemList(); // 10 000 элементов for (let i = 0; i &lt; items.length; i++) { // items.length вызывается 10 000 раз — даже если массив не меняется processItem(items[i]);
+}
+items.length — это свойство. В JavaScript оно вычисляется каждый раз, даже если массив статичен. Это лишняя нагрузка.const items = getLargeItemList();
+const length = items.length; // вычисляем один раз for (let i = 0; i &lt; length; i++) { processItem(items[i]);
+}
+Теперь length — это просто число, и его не нужно пересчитывать.for (let item of items) { if (item.name.toLowerCase().includes(searchTerm.toLowerCase())) { //toLowerCase() вызывается дважды на каждой итерации result.push(item); }
+}
+Каждый вызов toLowerCase() — это новая строка, которая создаётся и сравнивается. Это лишние выделения памяти и вычисления.const lowerSearchTerm = searchTerm.toLowerCase(); for (let item of items) { if (item.name.toLowerCase().includes(lowerSearchTerm)) { result.push(item); }
+} Избегайте сложных вычислений внутри цикла: математика, регулярные выражения, вызовы JSON.parse, querySelector.
+Выносите константы за пределы цикла: например, Math.PI, config.threshold, RegExp-шаблоны.
+Не модифицируйте массив, который перебираете — это может вызвать неожиданное поведение, особенно при использовании for...of.
+Используйте for...of вместо for с индексами, если вам не нужны индексы — меньше кода, меньше рисков. Всё, что не меняется на каждой итерации — выносите за цикл.
+Всё, что влияет на производительность (вычисления, вызовы функций) — минимизируйте внутри цикла.
+Оптимизация циклов напрямую влияет на скорость выполнения скрипта и отзывчивость приложения.
+]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№8/циклы-и-производительность.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №8/Циклы и производительность.md</guid><pubDate>Wed, 24 Sep 2025 07:17:34 GMT</pubDate></item><item><title><![CDATA[Прерывание и пропуск итераций]]></title><description><![CDATA[Без них цикл всегда выполняет все итерации до завершения условия. Но в реальных приложениях часто нужно:
+Остановить цикл, если найден нужный элемент (например, пользователь найден).
+Пропустить некорректные данные (например, пустой товар в списке).
+Избежать лишних вычислений — это повышает производительность и предсказуемость.
+Команда break немедленно завершает цикл, даже если условие ещё истинно.const users = [ { id: 1, name: "Анна" }, { id: 2, name: "Иван" }, { id: 3, name: "Мария" }
+]; let foundUser = null; for (let user of users) { if (user.id === 2) { foundUser = user; break; // Нашли — выходим, дальше не ищем }
+} console.log(foundUser); // { id: 2, name: "Иван" }
+Без break цикл продолжил бы перебирать остальных пользователей — хотя ответ уже найден.Команда continue пропускает остаток текущей итерации и переходит к следующей.const products = [ "Ноутбук", "", "Телефон", null, "Наушники"
+]; for (let product of products) { if (!product) { continue; // Пропускаем пустые и null } console.log("Товар: " + product);
+}
+Вывод:Товар: Ноутбук
+Товар: Телефон
+Товар: Наушники
+Пустые значения ("", null) игнорируются — цикл не выводит их, но не останавливается.При загрузке списка сообщений из API:for (let message of messages) { if (!message.text) { continue; // Пропускаем пустые сообщения } if (message.isDeleted) { break; // Остановить загрузку, если встретили удалённое — дальше не нужно } renderMessage(message);
+} break и continue работают только с ближайшим внешним циклом.
+Вложенные циклы: break выйдет только из внутреннего.
+Используйте их для улучшения читаемости — не для обхода логики, а для оптимизации. Используйте break, когда найдено нужное и дальнейший перебор не нужен.
+Используйте continue, когда текущий элемент не подходит и его нужно пропустить.
+Это делает код эффективнее и понятнее.
+]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№8/прерывание-и-пропуск-итераций.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №8/Прерывание и пропуск итераций.md</guid><pubDate>Wed, 24 Sep 2025 07:14:58 GMT</pubDate></item><item><title><![CDATA[Цикл `do...while`]]></title><description><![CDATA[Цикл do...while — это разновидность цикла while, в которой тело выполняется хотя бы один раз, даже если условие ложно с самого начала.do { // тело цикла
+} while (условие);
+Обратите внимание: условие проверяется после выполнения тела. Это главное отличие от while.let userInput = ""; do { userInput = prompt("Введите пароль (минимум 6 символов):");
+} while (userInput.length &lt; 6); console.log("Пароль принят: " + userInput);
+Здесь пользователь обязательно увидит поле ввода хотя бы один раз — даже если он сразу введёт короткий пароль. Цикл продолжится, пока условие не выполнится.
+Используйте do...while, когда нужно хотя бы один раз выполнить действие, а потом проверять, нужно ли повторять.
+Особенно полезно для ввода данных, настроек, подтверждений — там, где пользователь должен что-то сделать до продолжения.
+]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№8/цикл-`do...while`.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №8/Цикл `do...while`.md</guid><pubDate>Wed, 24 Sep 2025 07:13:37 GMT</pubDate></item><item><title><![CDATA[Цикл while]]></title><description><![CDATA[Цикл while выполняет блок кода пока условие истинно. Он подходит, когда заранее неизвестно, сколько раз нужно повторить действие.while (условие) { // тело цикла
+}
+Условие проверяется до каждой итерации. Если оно ложно с самого начала — тело цикла не выполнится ни разу.let isLoading = true;
+let attempts = 0; while (isLoading &amp;&amp; attempts &lt; 5) { console.log("Попытка загрузки #" + (attempts + 1)); // Имитация асинхронной загрузки if (Math.random() &gt; 0.7) { isLoading = false; console.log("Успешно загружено!"); } attempts++;
+}
+Здесь мы не знаем, на какой попытке данные загрузятся — поэтому используем while.const messages = ["Привет", "Как дела?", "Пока", "Спасибо"];
+let i = 0; while (i &lt; messages.length &amp;&amp; messages[i] !== "Пока") { console.log("Обрабатываю: " + messages[i]); i++;
+} console.log("Нашли 'Пока' на позиции " + i);
+Вывод:Обрабатываю: Привет
+Обрабатываю: Как дела?
+Нашли 'Пока' на позиции 2
+Если условие никогда не станет false — цикл никогда не завершится. Это приведёт к зависанию приложения.// ОШИБКА — бесконечный цикл
+while (true) { console.log("Это никогда не остановится!");
+}
+Всегда убедитесь, что внутри цикла есть изменение, которое ведёт к завершению условия.
+Когда количество итераций зависит от внешних условий: загрузка сети, ожидание ответа API, ввод пользователя.
+При работе с потоками данных, где элементы приходят динамически.
+В мобильных приложениях — например, повторная попытка отправки запроса при ошибке, пока не будет успеха или превышено лимит попыток. <a data-href="Цикл `do...while`" href="материалы/подтемы/секция-1.-javascript/тема-№8/цикл-`do...while`.html" class="internal-link" target="_self" rel="noopener nofollow">Цикл `do...while`</a>
+]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№8/цикл-while.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №8/Цикл while.md</guid><pubDate>Wed, 24 Sep 2025 07:12:34 GMT</pubDate></item><item><title><![CDATA[Тема №8. Циклы в JavaScript]]></title><description><![CDATA[В этой теме вы изучите циклические конструкции языка JavaScript — фундаментальный механизм для повторения действий. Поймёте, как организовать итерации над данными, что необходимо для обработки списков, массивов и других структур, используемых в приложениях любого типа.
+<a data-href="Что такое цикл" href="материалы/подтемы/секция-1.-javascript/тема-№8/что-такое-цикл.html" class="internal-link" target="_self" rel="noopener nofollow">Что такое цикл</a>
+<br><a data-href="Цикл for" href="материалы/подтемы/секция-1.-javascript/тема-№8/цикл-for.html" class="internal-link" target="_self" rel="noopener nofollow">Цикл for</a>
+<br><a data-href="Цикл while" href="материалы/подтемы/секция-1.-javascript/тема-№8/цикл-while.html" class="internal-link" target="_self" rel="noopener nofollow">Цикл while</a>
+<br><a data-href="Прерывание и пропуск итераций" href="материалы/подтемы/секция-1.-javascript/тема-№8/прерывание-и-пропуск-итераций.html" class="internal-link" target="_self" rel="noopener nofollow">Прерывание и пропуск итераций</a>
+<br><a data-href="Циклы и производительность" href="материалы/подтемы/секция-1.-javascript/тема-№8/циклы-и-производительность.html" class="internal-link" target="_self" rel="noopener nofollow">Циклы и производительность</a>
+(Пусто)<br><a data-href="Тема №9. Функции в JavaScript" href="лекции/секция-1.-javascript/тема-№9.-функции-в-javascript.html" class="internal-link" target="_self" rel="noopener nofollow">Тема №9. Функции в JavaScript</a>]]></description><link>лекции/секция-1.-javascript/тема-№8.-циклы-в-javascript.html</link><guid isPermaLink="false">Лекции/Секция 1. JavaScript/Тема №8. Циклы в JavaScript.md</guid><pubDate>Wed, 24 Sep 2025 07:11:55 GMT</pubDate></item><item><title><![CDATA[Цикл `for...of` — перебор значений итерируемых объектов]]></title><description><![CDATA[Цикл for...of — это современный способ перебора значений в итерируемых объектах. Он предназначен для доступа к данным, а не к их ключам.for (значение of итерируемый_объект) { // тело цикла
+}
+const colors = ["красный", "зелёный", "синий"]; for (let color of colors) { console.log(color);
+}
+Вывод:красный
+зелёный
+синий
+Здесь color — это значение элемента, а не индекс.const text = "Привет"; for (let char of text) { console.log(char);
+}
+Вывод:П
+р
+и
+в
+е
+т
+Каждая итерация возвращает один символ.const settings = new Map([ ["theme", "dark"], ["lang", "ru"], ["notifications", true]
+]); for (let value of settings) { console.log(value); // ["theme", "dark"], ["lang", "ru"], ["notifications", true]
+} // Если нужно отдельно ключ и значение:
+for (let [key, value] of settings) { console.log(key + ": " + value);
+}
+Вывод:theme: dark
+lang: ru
+notifications: true
+const tags = new Set(["javascript", "react", "mobile"]); for (let tag of tags) { console.log(tag);
+}
+Вывод:javascript
+react
+mobile Используйте for...of, когда нужно перебрать значения — массивы, строки, Map, Set, NodeList и другие итерируемые структуры.
+Это безопасно, понятно и работает предсказуемо.
+]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№8/цикл-`for...of`-—-перебор-значений-итерируемых-объектов.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №8/Цикл `for...of` — перебор значений итерируемых объектов.md</guid><pubDate>Wed, 24 Sep 2025 07:10:08 GMT</pubDate></item><item><title><![CDATA[Цикл `for...in` — перебор ключей объекта]]></title><description><![CDATA[Цикл for...in перебирает ключевые свойства объекта — то есть имена (ключи) его перечисляемых свойств.for (ключ in объект) { // тело цикла
+}
+const user = { name: "Анна", age: 28, role: "администратор"
+}; for (let key in user) { console.log(key + ": " + user[key]);
+}
+Вывод:name: Анна
+age: 28
+role: администратор
+Каждая итерация возвращает имя свойства — строку. Чтобы получить значение, нужно обратиться через объект[ключ].
+Перебирает только перечисляемые свойства (те, что можно увидеть в Object.keys()).
+Включает свойства, унаследованные от прототипа, если они не помечены как enumerable: false.
+Порядок не гарантирован — особенно для числовых ключей, которые могут быть отсортированы по возрастанию.
+const arr = ["a", "b", "c"];
+arr.extra = "лишнее"; // добавили нечисловое свойство for (let key in arr) { console.log(key); // выведет: "0", "1", "2", "extra"
+}
+Проблемы:
+Не только индексы — for...in перебирает все перечисляемые свойства, включая те, что добавлены вручную.
+Порядок может нарушиться — в некоторых движках числовые ключи сортируются по возрастанию, даже если они были добавлены в другом порядке.
+Нет гарантии, что вы получите только элементы массива — если библиотека расширила Array.prototype, это тоже попадёт в цикл. Не используйте for...in для массивов.
+Используйте for...of или классический for.
+Для массивов for...in — источник багов. Для объектов — нормально, если вы знаете, что делаете.]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№8/цикл-`for...in`-—-перебор-ключей-объекта.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №8/Цикл `for...in` — перебор ключей объекта.md</guid><pubDate>Wed, 24 Sep 2025 07:08:40 GMT</pubDate></item><item><title><![CDATA[Цикл for]]></title><description><![CDATA[Цикл for — это самый гибкий и часто используемый цикл в JavaScript. Он позволяет точно контролировать начало, условие продолжения и изменение счётчика на каждой итерации.for (инициализация; условие; шаг) { // тело цикла
+} инициализация — выполняется один раз в начале. Обычно объявляется счётчик (let i = 0).
+условие — проверяется перед каждой итерацией. Если false — цикл завершается.
+шаг — выполняется после каждого прохода тела цикла. Обычно увеличивает счётчик (i++).
+const products = ["Яблоко", "Груша", "Апельсин"]; for (let i = 0; i &lt; products.length; i++) { console.log("Товар: " + products[i]);
+}
+Вывод:Товар: Яблоко
+Товар: Груша
+Товар: Апельсин
+Здесь i — индекс текущего элемента. Мы используем его для доступа к products[i].Если массив изменяется во время цикла (например, элементы удаляются), length пересчитывается на каждой итерации. Это безопасно.
+<a data-href="Цикл `for...in` — перебор ключей объекта" href="материалы/подтемы/секция-1.-javascript/тема-№8/цикл-`for...in`-—-перебор-ключей-объекта.html" class="internal-link" target="_self" rel="noopener nofollow">Цикл `for...in` — перебор ключей объекта</a>
+<br><a data-href="Цикл `for...of` — перебор значений итерируемых объектов" href="материалы/подтемы/секция-1.-javascript/тема-№8/цикл-`for...of`-—-перебор-значений-итерируемых-объектов.html" class="internal-link" target="_self" rel="noopener nofollow">Цикл `for...of` — перебор значений итерируемых объектов</a>
+]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№8/цикл-for.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №8/Цикл for.md</guid><pubDate>Wed, 24 Sep 2025 07:07:53 GMT</pubDate></item><item><title><![CDATA[Что такое цикл]]></title><description><![CDATA[Цикл — это конструкция, которая повторяет выполнение блока кода, пока выполняется заданное условие.Каждое повторение называется итерацией. Например, если вы перебираете 10 элементов массива — это 10 итераций.Циклы нужны, чтобы не писать один и тот же код десятки раз. Без них пришлось бы вручную обрабатывать каждый элемент списка, что невозможно при динамических данных.Пример: у вас есть список задач. Вы хотите вывести каждую в консоль. Без цикла — 10 строк кода. С циклом — одна.const tasks = ["Починить кнопку", "Обновить API", "Проверить стиль"]; for (let i = 0; i &lt; tasks.length; i++) { console.log(tasks[i]);
+}
+Также циклы используются для генерации данных: например, создание 100 случайных чисел, или заполнение списка пунктов меню.Циклы — это основа работы с коллекциями. Без них невозможно построить интерактивный интерфейс с динамическим содержимым.]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№8/что-такое-цикл.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №8/Что такое цикл.md</guid><pubDate>Wed, 24 Sep 2025 07:05:06 GMT</pubDate></item><item><title><![CDATA[Тема №7. Ветвление в JavaScript]]></title><description><![CDATA[В этой теме вы изучите механизмы ветвления в JavaScript — основу логического управления потоком выполнения программы. Вы научитесь использовать условные конструкции для принятия решений на основе данных, что критически важно для реализации интерактивности.
+<a data-href="Что такое ветвление" href="материалы/подтемы/секция-1.-javascript/тема-№7/что-такое-ветвление.html" class="internal-link" target="_self" rel="noopener nofollow">Что такое ветвление</a>
+<br><a data-href="Оператор `if`" href="материалы/подтемы/секция-1.-javascript/тема-№7/оператор-`if`.html" class="internal-link" target="_self" rel="noopener nofollow">Оператор `if`</a>
+<br><a data-href="Оператор `else`" href="материалы/подтемы/секция-1.-javascript/тема-№7/оператор-`else`.html" class="internal-link" target="_self" rel="noopener nofollow">Оператор `else`</a>
+<br><a data-href="Цепочки `else if`" href="материалы/подтемы/секция-1.-javascript/тема-№7/цепочки-`else-if`.html" class="internal-link" target="_self" rel="noopener nofollow">Цепочки `else if`</a>
+<br><a data-href="Тернарный оператор" href="материалы/подтемы/секция-1.-javascript/тема-№7/тернарный-оператор.html" class="internal-link" target="_self" rel="noopener nofollow">Тернарный оператор</a>
+<br><a data-href="Оператор `switch`" href="материалы/подтемы/секция-1.-javascript/тема-№7/оператор-`switch`.html" class="internal-link" target="_self" rel="noopener nofollow">Оператор `switch`</a>
+<br><a data-href="Сравнение `if` и `switch`" href="материалы/подтемы/секция-1.-javascript/тема-№7/сравнение-`if`-и-`switch`.html" class="internal-link" target="_self" rel="noopener nofollow">Сравнение `if` и `switch`</a>
+(Пусто)<br><a data-href="Тема №8. Циклы в JavaScript" href="лекции/секция-1.-javascript/тема-№8.-циклы-в-javascript.html" class="internal-link" target="_self" rel="noopener nofollow">Тема №8. Циклы в JavaScript</a>]]></description><link>лекции/секция-1.-javascript/тема-№7.-ветвление-в-javascript.html</link><guid isPermaLink="false">Лекции/Секция 1. JavaScript/Тема №7. Ветвление в JavaScript.md</guid><pubDate>Wed, 24 Sep 2025 07:02:04 GMT</pubDate></item><item><title><![CDATA[Сравнение `if` и `switch`]]></title><description><![CDATA[Выбор между if и switch зависит от типа условия, которое вы проверяете. Оба инструмента решают похожие задачи, но используются в разных сценариях.Используйте if и else if, когда: Проверяете диапазоны значений if (score &gt;= 90) { grade = "A";
+} else if (score &gt;= 80) { grade = "B";
+} else if (score &gt;= 60) { grade = "C";
+} Используете логические операции (&amp;&amp;, ||, !) if (isLoggedIn &amp;&amp; user.role === "admin" &amp;&amp; !user.banned) { showAdminPanel();
+} Условия не сводятся к одному значению — например, проверка наличия данных, состояния сети, времени суток if (date.getHours() &gt;= 6 &amp;&amp; date.getHours() &lt; 12) { setMessage("Доброе утро!");
+} Значения динамические или вычисляемые — switch не может работать с выражениями в case. Используйте switch, когда: Проверяете одну переменную на равенство конкретным, дискретным значениям — например, строковым ключам, числам, enum-значениям switch (notificationType) { case "info": case "success": showBanner("Сообщение", "blue"); break; case "warning": showBanner("Предупреждение", "orange"); break; case "error": showBanner("Ошибка", "red"); break;
+} У вас есть перечисление возможных состояний — язык интерфейса, тип уведомления, статус заказа, режим приложения switch (appTheme) { case "light": case "dark": case "system": applyTheme(appTheme); break;
+} Код должен быть структурирован и легко расширяться — добавление нового case не нарушает логику остальных веток. В современных движках JavaScript (V8, SpiderMonkey) разница в производительности между if и switch минимальна — особенно при небольшом количестве условий.
+Для большого числа вариантов (например, 10+ дискретных значений) switch может быть чуть быстрее, потому что внутренне использует таблицу переходов (jump table), а не последовательные проверки.
+Но в реальных веб и мобильных приложениях эта разница не имеет значения — важнее читаемость и поддерживаемость. switch лучше читается, когда вы видите список возможных значений — как меню.
+if лучше читается, когда вы видите логические правила — как условия в форме.
+Пример читаемого switch:switch (buttonAction) { case "save": saveData(); break; case "cancel": closeModal(); break; case "delete": confirmDelete(); break;
+}
+Пример читаемого if:if (isOffline &amp;&amp; hasUnsavedChanges) { showSavePrompt();
+} else if (!isOffline &amp;&amp; !hasUnsavedChanges) { hideNotification();
+} Используйте switch для перечислений — когда у вас есть фиксированный набор значений.
+Используйте if для логики — когда нужно проверять диапазоны, комбинации, условия с &amp;&amp; или ||.
+Не гонитесь за «красивым» кодом — выбирайте то, что понятнее вашей команде.
+Если вы сомневаетесь — выбирайте if. Он универсален. switch — специализированный инструмент.
+]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№7/сравнение-`if`-и-`switch`.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №7/Сравнение `if` и `switch`.md</guid><pubDate>Wed, 24 Sep 2025 07:00:45 GMT</pubDate></item><item><title><![CDATA[Оператор `switch`]]></title><description><![CDATA[Оператор switch используется для выбора одного из нескольких блоков кода на основе значения выражения. Он особенно удобен, когда нужно проверить переменную на равенство нескольким дискретным значениям.switch (выражение) { case значение1: // код, если выражение === значение1 break; case значение2: // код, если выражение === значение2 break; default: // код, если ни одно значение не совпало (необязательно)
+}
+switch сравнивает значение выражения с каждым case с помощью строгого сравнения (===) — то есть и тип, и значение должны совпадать.Пример: выбор языка интерфейсаconst language = "ru"; switch (language) { case "en": setLanguage("English"); break; case "ru": setLanguage("Русский"); break; case "es": setLanguage("Español"); break; default: setLanguage("English"); // запасной вариант
+}
+Здесь language сравнивается со строками "en", "ru", "es". Если совпадает — выполняется соответствующий блок, и break останавливает выполнение.Без break выполнение продолжается на следующие case — это называется просачиванием (fall-through).Пример с ошибкой:const role = "admin"; switch (role) { case "admin": console.log("Администратор"); case "moderator": console.log("Модератор"); case "user": console.log("Пользователь"); default: console.log("Гость");
+}
+Вывод:Администратор
+Модератор
+Пользователь
+Гость
+Потому что после case "admin": нет break — выполнение «просочилось» дальше.Это может быть полезно в редких случаях — например, когда несколько значений должны делать одно и то же:const permission = "read"; switch (permission) { case "read": case "write": case "delete": enableButton("action"); break; default: disableButton("action");
+}
+Здесь если permission — "read", "write" или "delete" — кнопка включается. Это читаемо и логично.default не обязателен, но рекомендуется всегда добавлять. Он обрабатывает случаи, когда значение не совпало ни с одним case.Пример: обработка типов уведомленийconst notificationType = "error"; // пришло из API switch (notificationType) { case "success": showBanner("Успешно!", "green"); break; case "warning": showBanner("Предупреждение!", "orange"); break; case "error": showBanner("Ошибка!", "red"); break; default: console.warn("Неизвестный тип уведомления:", notificationType); showBanner("Новое сообщение", "blue");
+}
+Здесь даже если сервер отправит неожиданный тип — приложение не сломается, а просто покажет стандартное сообщение и залогирует проблему.✅ Используйте switch, когда:
+Проверяете одну переменную на равенство нескольким конкретным значениям.
+Значения — строковые константы, числа, перечисления (enum).
+Код должен быть структурирован и легко расширяться.
+❌ Не используйте switch, когда:
+Нужно проверять диапазоны (if (score &gt;= 90)).
+Условия сложные (if (user.age &gt; 18 &amp;&amp; user.role === "admin")).
+Вы сравниваете объекты или массивы — switch работает только с примитивами. switch работает только с примитивами: строки, числа, булевы, null, undefined, символы.
+case не может быть выражением — только литералы или константы.
+Все case должны быть уникальными в рамках одного switch.
+Пример запрещённого:switch (x) { case y + 1: // ОШИБКА — выражение не допускается break;
+}
+]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№7/оператор-`switch`.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №7/Оператор `switch`.md</guid><pubDate>Wed, 24 Sep 2025 06:57:52 GMT</pubDate></item><item><title><![CDATA[Тернарный оператор]]></title><description><![CDATA[Тернарный оператор ? : — это краткая форма if else, используемая для присваивания значения в зависимости от условия.Синтаксис:условие ? выражение1 : выражение2
+Если условие истинно — возвращается выражение1, иначе — выражение2.const isLoggedIn = true;
+const buttonText = isLoggedIn ? "Выйти" : "Войти";
+button.textContent = buttonText;
+Здесь вместо:let buttonText;
+if (isLoggedIn) { buttonText = "Выйти";
+} else { buttonText = "Войти";
+}
+Мы пишем одну строку — чище, короче, удобнее для присваивания.const hasAvatar = user.avatarUrl !== null;
+const avatarSrc = hasAvatar ? user.avatarUrl : "/images/default-avatar.png";
+avatarImage.src = avatarSrc;
+const count = 5;
+const message = count === 1 ? "1 новое сообщение" : `${count} новых сообщений`;
+notification.textContent = message; Краткость: идеален для простых условий, особенно при присваивании.
+Читаемость в простых случаях: сразу видно, что значение зависит от условия.
+Удобен в шаблонах, функциях, JSX (в React), где нельзя использовать блоки if. Не подходит для сложной логики. Например:
+// ПЛОХО — не читаемо и сложно отлаживать
+const result = condition1 ? (condition2 ? (condition3 ? "A" : "B") : "C") : (condition4 ? "D" : "E");
+Такой код трудно понять и поддерживать. Лучше использовать if else.
+Нельзя выполнять несколько действий внутри тернарного оператора:
+// НЕ РАБОТАЕТ так, как ожидается
+isLoggedIn ? console.log("Вход выполнен"), openDashboard() : redirectToLogin();
+Здесь console.log и openDashboard() не будут выполнены как блок. Для нескольких действий используйте if.✅ Используйте тернарный оператор, когда:
+Вы присваиваете значение переменной.
+Условие простое — одно сравнение, один оператор.
+Код должен быть компактным и понятным.
+❌ Не используйте, когда:
+Нужно выполнить несколько действий.
+Условие сложное (с логическими операторами &amp;&amp;, ||, несколькими вложенными).
+Вы хотите повысить читаемость для команды — лучше if else.
+Тернарный оператор — инструмент для простых решений. Не превращайте его в замену if else.]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№7/тернарный-оператор.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №7/Тернарный оператор.md</guid><pubDate>Wed, 24 Sep 2025 06:57:24 GMT</pubDate></item><item><title><![CDATA[Цепочки `else if`]]></title><description><![CDATA[Цепочка else if` позволяет проверить несколько условий последовательно — и выполнить только первый подходящий блок.Синтаксис:if (условие1) { // выполнится, если условие1 истинно
+} else if (условие2) { // выполнится, если условие1 ложно, а условие2 истинно
+} else if (условие3) { // выполнится, если условие1 и условие2 ложны, а условие3 истинно
+} else { // выполнится, если все условия ложны (необязательно)
+}
+Важно: как только одно из условий становится истинным — выполняется соответствующий блок, и все остальные условия не проверяются.const userRole = "moderator"; if (userRole === "admin") { showAdminPanel();
+} else if (userRole === "moderator") { showModeratorPanel();
+} else if (userRole === "user") { showUserPanel();
+} else { showGuestPanel();
+}
+Здесь:
+Если роль — "admin" — показывается панель администратора, и проверка останавливается.
+Если роль — "moderator" — показывается панель модератора, даже если бы были другие условия, они не проверяются.
+Если ни одно из известных значений не подошло — показывается панель гостя.
+Представьте, что вы перепутали порядок:if (userRole === "user") { showUserPanel();
+} else if (userRole === "moderator") { showModeratorPanel();
+} else if (userRole === "admin") { showAdminPanel();
+}
+Если пользователь имеет роль "admin", он попадёт в блок "user", потому что "admin" содержит "user" как подстроку? Нет — в данном случае сравнение строгое (===), так что не сработает. Но если бы вы использовали indexOf или includes, ошибки были бы критичны.Более реальный пример с ошибкой:const score = 95; if (score &gt;= 60) { grade = "C"; // Всегда сработает первым!
+} else if (score &gt;= 80) { grade = "B";
+} else if (score &gt;= 90) { grade = "A";
+}
+Здесь оценка 95 получит "C", потому что первое условие score &gt;= 60 уже истинно. Правильно:if (score &gt;= 90) { grade = "A";
+} else if (score &gt;= 80) { grade = "B";
+} else if (score &gt;= 60) { grade = "C";
+} else { grade = "F";
+}
+const themeSetting = "dark"; if (themeSetting === "light") { document.body.classList.remove("dark-theme"); document.body.classList.add("light-theme");
+} else if (themeSetting === "dark") { document.body.classList.remove("light-theme"); document.body.classList.add("dark-theme");
+} else if (themeSetting === "system") { if (window.matchMedia("(prefers-color-scheme: dark)").matches) { document.body.classList.add("dark-theme"); } else { document.body.classList.add("light-theme"); }
+} else { // значение неизвестно — используем по умолчанию document.body.classList.add("light-theme");
+}
+Здесь три явных варианта и один запасной — логика понятна, читаема, и порядок условий критичен.]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№7/цепочки-`else-if`.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №7/Цепочки `else if`.md</guid><pubDate>Wed, 24 Sep 2025 06:56:04 GMT</pubDate></item><item><title><![CDATA[Оператор `else`]]></title><description><![CDATA[Оператор else используется вместе с if, чтобы указать, что нужно выполнить альтернативный блок кода, если условие в if ложно.Синтаксис:if (условие) { // выполнится, если условие истинно
+} else { // выполнится, если условие ложно
+}
+else не имеет собственного условия — он всегда связан с ближайшим предыдущим if.Пример: проверка наличия интернет-соединенияconst isConnected = navigator.onLine; if (isConnected) { syncData();
+} else { showOfflineMessage(); saveToLocalCache();
+}
+Здесь программа либо синхронизирует данные, либо показывает сообщение и сохраняет их локально — в зависимости от состояния сети. Нет третьего варианта — только два пути.
+else не может существовать без if.
+else выполняется, только если ни один из предыдущих if (или else if) не сработал.
+Можно использовать else даже без фигурных скобок — но снова, всегда используйте скобки для ясности и безопасности.
+]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№7/оператор-`else`.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №7/Оператор `else`.md</guid><pubDate>Wed, 24 Sep 2025 06:55:12 GMT</pubDate></item><item><title><![CDATA[Оператор `if`]]></title><description><![CDATA[Оператор if выполняет блок кода, только если условие в скобках истинно.Базовый синтаксис:if (условие) { // код, который выполнится, если условие истинно
+}
+Условие — это выражение, которое возвращает true или false. В JavaScript к false приводятся значения: false, 0, "" (пустая строка), null, undefined, NaN. Всё остальное — true.Пример: проверка, авторизован ли пользовательconst userToken = localStorage.getItem("token"); if (userToken) { console.log("Пользователь авторизован"); loadUserProfile();
+}
+Здесь userToken может быть строкой (истина) или null (ложь). Если токен есть — вызываем функцию загрузки профиля. Если нет — ничего не делаем.Нет, они не обязательны, если в блоке if только одна строка:if (userToken) console.log("Пользователь авторизован");
+Но рекомендуется всегда использовать фигурные скобки, даже для одной строки.Почему?
+Избегает ошибок при доработке кода:
+if (userToken) console.log("Пользователь авторизован"); loadUserProfile(); // Эта строка ВСЕГДА выполнится — вне зависимости от условия!
+Здесь loadUserProfile() не в блоке if, потому что нет скобок. Это распространённая ошибка. Улучшает читаемость и согласованность кода в команде. Снижает риск багов при рефакторинге. Правило: всегда пишите скобки.if (userToken) { console.log("Пользователь авторизован"); loadUserProfile();
+}
+]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№7/оператор-`if`.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №7/Оператор `if`.md</guid><pubDate>Wed, 24 Sep 2025 06:52:29 GMT</pubDate></item><item><title><![CDATA[Что такое ветвление]]></title><description><![CDATA[Ветвление — это механизм, при котором программа выбирает, какой участок кода выполнить, в зависимости от того, истинно или ложно условие.В любых программах это используется повсеместно: например, если пользователь авторизован — показываем главный экран, иначе — экран входа. Или если сеть доступна — загружаем данные, иначе — показываем сообщение об ошибке.В JavaScript ветвление реализуется с помощью условных конструкций: if, else, else if, switch и тернарного оператора.Без ветвления программа выполняет команды строго сверху вниз — как линейный список. С ветвлением она становится адаптивной: реагирует на данные, состояние системы, действия пользователя.Пример:const isLoggedIn = true; if (isLoggedIn) { console.log("Добро пожаловать!");
+} else { console.log("Пожалуйста, войдите в аккаунт.");
+}
+Здесь программа ведёт себя по-разному в зависимости от значения isLoggedIn. Это и есть ветвление.]]></description><link>материалы/подтемы/секция-1.-javascript/тема-№7/что-такое-ветвление.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 1. JavaScript/Тема №7/Что такое ветвление.md</guid><pubDate>Wed, 24 Sep 2025 06:51:03 GMT</pubDate></item><item><title><![CDATA[Тема №6. Git, GitHub]]></title><description><![CDATA[В этой теме вы познакомитесь с системой контроля версий Git и платформой GitHub — основными инструментами для управления кодом в командной разработке. Изучите базовые команды для отслеживания изменений, создания коммитов и взаимодействия с удалённым репозиторием. Это необходимо для совместной работы над мобильными приложениями, а также для хранения и публикации вашего кода.
 <a data-href="Что такое Git" href="материалы/подтемы/секция-1.-javascript/тема-№6/что-такое-git.html" class="internal-link" target="_self" rel="noopener nofollow">Что такое Git</a>
 <br><a data-href="Основные понятия Git" href="материалы/подтемы/секция-1.-javascript/тема-№6/основные-понятия-git.html" class="internal-link" target="_self" rel="noopener nofollow">Основные понятия Git</a>
 <br><a data-href="Базовые команды Git" href="материалы/подтемы/секция-1.-javascript/тема-№6/базовые-команды-git.html" class="internal-link" target="_self" rel="noopener nofollow">Базовые команды Git</a>
