@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MobileDevTisbi]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>MobileDevTisbi</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 01 Oct 2025 18:15:29 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 01 Oct 2025 18:14:56 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Тема №12. Создание сервера NodeJS. WEB 1.0 и WEB 2.0]]></title><description><![CDATA[В этой теме вы изучите основы создания сервера на NodeJS и эволюцию веб-архитектур — от статического веба (WEB 1.0) до интерактивных приложений с динамической генерацией контента (WEB 2.0). Вы поймёте, как сервер обрабатывает запросы, отдаёт файлы и отвечает JSON-данными. Также разберёте ключевые подходы: SSR и CSR, а также основы маршрутизации и работы с файловой системой.
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MobileDevTisbi]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>MobileDevTisbi</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 02 Oct 2025 04:13:55 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 02 Oct 2025 04:13:54 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Тема №12. Создание сервера NodeJS. WEB 1.0 и WEB 2.0]]></title><description><![CDATA[В этой теме вы изучите основы создания сервера на NodeJS и эволюцию веб-архитектур — от статического веба (WEB 1.0) до интерактивных приложений с динамической генерацией контента (WEB 2.0). Вы поймёте, как сервер обрабатывает запросы, отдаёт файлы и отвечает JSON-данными. Также разберёте ключевые подходы: SSR и CSR, а также основы маршрутизации и работы с файловой системой.
 <a data-href="WEB 1.0 (статический веб)" href="материалы/подтемы/секция-1.-javascript/тема-№12/web-1.0-(статический-веб).html" class="internal-link" target="_self" rel="noopener nofollow">WEB 1.0 (статический веб)</a>
 <br><a data-href="WEB 2.0 (интерактивный веб)" href="материалы/подтемы/секция-1.-javascript/тема-№12/web-2.0-(интерактивный-веб).html" class="internal-link" target="_self" rel="noopener nofollow">WEB 2.0 (интерактивный веб)</a>
 <br><a data-href="Основы сервера на NodeJS" href="материалы/подтемы/секция-1.-javascript/тема-№12/основы-сервера-на-nodejs.html" class="internal-link" target="_self" rel="noopener nofollow">Основы сервера на NodeJS</a>
@@ -6,7 +6,66 @@
 <br><a data-href="Маршрутизация в NodeJS" href="материалы/подтемы/секция-1.-javascript/тема-№12/маршрутизация-в-nodejs.html" class="internal-link" target="_self" rel="noopener nofollow">Маршрутизация в NodeJS</a>
 <br><a data-href="Отправка файлов с сервера" href="материалы/подтемы/секция-1.-javascript/тема-№12/отправка-файлов-с-сервера.html" class="internal-link" target="_self" rel="noopener nofollow">Отправка файлов с сервера</a>
 <br><a data-href="Вкратце о REST" href="материалы/подтемы/секция-1.-javascript/тема-№12/вкратце-о-rest.html" class="internal-link" target="_self" rel="noopener nofollow">Вкратце о REST</a> <br><a data-href="Практика №8. SSR-сервер с динамической генерацией страниц" href="задания/секция-1.-javascript/практика-№8.-ssr-сервер-с-динамической-генерацией-страниц.html" class="internal-link" target="_self" rel="noopener nofollow">Практика №8. SSR-сервер с динамической генерацией страниц</a>
-<br><a data-href="Тема №13. Основы React" href=".html" class="internal-link" target="_self" rel="noopener nofollow">Тема №13. Основы React</a>]]></description><link>лекции/секция-1.-javascript/тема-№12.-создание-сервера-nodejs.-web-1.0-и-web-2.0.html</link><guid isPermaLink="false">Лекции/Секция 1. JavaScript/Тема №12. Создание сервера NodeJS. WEB 1.0 и WEB 2.0.md</guid><pubDate>Wed, 01 Oct 2025 18:14:00 GMT</pubDate></item><item><title><![CDATA[Практика №8. SSR-сервер с динамической генерацией страниц]]></title><description><![CDATA[В рамках этого задания вам необходимо создать сервер на NodeJS, который реализует Server-Side Rendering (SSR) — динамическую генерацию HTML-страниц на основе данных, хранящихся в памяти. Сервер должен отдавать полностью готовые HTML-страницы при запросах к корневому пути / и к динамическому пути /task/:id, без использования клиентского JavaScript для рендеринга. Все данные формируются на сервере, ответы содержат структурированный HTML с встроенными стилями и ссылками. Никаких внешних библиотек — только встроенные модули NodeJS: http, path.Задание обязано быть опубликовано в существующем приватном репозитории организации GitHub с названием Группа_Фамилия_task-8.(пусто)Создайте HTTP-сервер на NodeJS, который:
+<br><a data-href="Практика №9. CSR с гидратацией. Интерактивный счётчик" href="задания/секция-1.-javascript/практика-№9.-csr-с-гидратацией.-интерактивный-счётчик.html" class="internal-link" target="_self" rel="noopener nofollow">Практика №9. CSR с гидратацией. Интерактивный счётчик</a>
+<br><a data-href="Тема №13. Основы React" href=".html" class="internal-link" target="_self" rel="noopener nofollow">Тема №13. Основы React</a>]]></description><link>лекции/секция-1.-javascript/тема-№12.-создание-сервера-nodejs.-web-1.0-и-web-2.0.html</link><guid isPermaLink="false">Лекции/Секция 1. JavaScript/Тема №12. Создание сервера NodeJS. WEB 1.0 и WEB 2.0.md</guid><pubDate>Thu, 02 Oct 2025 04:13:04 GMT</pubDate></item><item><title><![CDATA[Практика №9. CSR с гидратацией. Интерактивный счётчик]]></title><description><![CDATA[В рамках этого задания вам необходимо создать веб-приложение, использующее Client-Side Rendering (CSR) с последующей гидратацией. Сервер отдаёт минимальный HTML-шаблон без содержимого — только контейнер и скрипт. Всё поведение (счётчик, управление значениями, стили) реализуется исключительно на клиенте через JavaScript. Приложение — интерактивный счётчик с возможностью задавать начальное значение, минимальное и максимальное значение через атрибуты HTML. Сервер не участвует в логике — он только отдаёт статический index.html и app.js. Задание обязано быть опубликовано в новом приватном репозитории организации GitHub с названием Группа_Фамилия_task-9.index.html&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt; &lt;meta charset="utf-8"&gt; &lt;title&gt;Счётчик&lt;/title&gt; &lt;link rel="stylesheet" href="/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt; &lt;div id="counter" data-initial="0" data-min="-5" data-max="10"&gt; &lt;/div&gt; &lt;script src="/app.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+style.cssbody { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f5f5f5;
+} #counter { text-align: center; padding: 2rem; border-radius: 12px; background-color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1); min-width: 200px;
+} #counter button { padding: 0.5rem 1rem; margin: 0 0.5rem; font-size: 1rem; border: none; border-radius: 6px; cursor: pointer; transition: background-color 0.2s;
+} #counter button.decrease { background-color: #ff6b6b; color: white;
+} #counter button.reset { background-color: #f7b731; color: white;
+} #counter button.increase { background-color: #4ecdc4; color: white;
+} #counter span { font-size: 2rem; font-weight: bold; margin: 1rem 0; display: block;
+} #counter button:disabled { opacity: 0.5; cursor: not-allowed;
+}
+Создайте HTTP-сервер на NodeJS, который:
+Отвечает на запрос GET / — отдаёт файл index.html
+Отвечает на запрос GET /app.js — отдаёт файл app.js
+Для всех остальных путей — отдаёт 404 с сообщением &lt;h1&gt;404 Not Found&lt;/h1&gt;
+Использует только встроенные модули: http, path, fs
+Не использует readFileSync — только readFile
+Устанавливает правильный Content-Type: text/html для /
+text/javascript для /app.js Сервер слушает порт 3000
+Создайте файл index.html с минимальной структурой:
+Используйте &lt;div id="counter"&gt; как контейнер для счётчика
+Добавьте три data-атрибута: data-initial — начальное значение (по умолчанию 0)
+data-min — минимальное допустимое значение (по умолчанию -5)
+data-max — максимальное допустимое значение (по умолчанию 10) Подключите стили из /style.css
+Подключите скрипт /app.js в конце &lt;body&gt;
+Создайте файл style.css с базовыми стилями:
+Стили должны применяться только через классы — не через inline-стили
+Кнопки должны иметь цвета и переходы
+Счётчик должен быть центрирован на странице
+Создайте файл app.js, который:
+Находит элемент #counter
+Считывает значения из data-initial, data-min, data-max (преобразует в числа)
+Если атрибуты не заданы — использует значения по умолчанию: initial=0, min=-5, max=10
+Генерирует внутри #counter: &lt;span&gt; с текущим значением (изначально = initial)
+Три кнопки: «Уменьшить», «Сбросить», «Увеличить» При нажатии: «Уменьшить» — уменьшает значение на 1, но не ниже min
+«Увеличить» — увеличивает значение на 1, но не выше max
+«Сбросить» — возвращает значение к initial Кнопки «Уменьшить» и «Увеличить» должны отключаться, если достигнуты границы: min → кнопка «Уменьшить» → disabled
+max → кнопка «Увеличить» → disabled Все изменения отображаются мгновенно — без перезагрузки
+Никаких внешних библиотек — только чистый JavaScript (ES5+)
+Никаких fetch(), innerHTML.
+После загрузки страницы:
+В HTML: &lt;div id="counter" data-initial="0" data-min="-5" data-max="10"&gt;&lt;/div&gt;
+После выполнения app.js:
+&lt;div id="counter" data-initial="0" data-min="-5" data-max="10"&gt; &lt;span&gt;0&lt;/span&gt; &lt;button class="decrease"&gt;Уменьшить&lt;/button&gt; &lt;button class="reset"&gt;Сбросить&lt;/button&gt; &lt;button class="increase"&gt;Увеличить&lt;/button&gt;
+&lt;/div&gt; При нажатии «Увеличить» 12 раз — значение станет 10, кнопка «Увеличить» станет disabled
+При нажатии «Уменьшить» — значение упадёт до -5, кнопка «Уменьшить» станет disabled
+При нажатии «Сбросить» — значение вернётся к 0, кнопки снова активны Сервер отдаёт только index.html, app.js и style.css — никаких других файлов
+Все логика — на клиенте
+Никаких React, Vue, jQuery — только чистый JS
+Скрипт должен работать сразу после загрузки — без DOMContentLoaded (можно использовать defer или просто поместить в конец &lt;body&gt;)
+Стили — только в style.css, не в JS
+Никаких alert(), console.log() в финальной версии
+На выполнение выделяется 4 практических пары.
+Градация баллов после дедлайна: 1 пара: 50% 2 пара: 25% 3 пара: 0% ]]></description><link>задания/секция-1.-javascript/практика-№9.-csr-с-гидратацией.-интерактивный-счётчик.html</link><guid isPermaLink="false">Задания/Секция 1. JavaScript/Практика №9. CSR с гидратацией. Интерактивный счётчик.md</guid><pubDate>Thu, 02 Oct 2025 04:12:18 GMT</pubDate></item><item><title><![CDATA[Практика №8. SSR-сервер с динамической генерацией страниц]]></title><description><![CDATA[В рамках этого задания вам необходимо создать сервер на NodeJS, который реализует Server-Side Rendering (SSR) — динамическую генерацию HTML-страниц на основе данных, хранящихся в памяти. Сервер должен отдавать полностью готовые HTML-страницы при запросах к корневому пути / и к динамическому пути /task/:id, без использования клиентского JavaScript для рендеринга. Все данные формируются на сервере, ответы содержат структурированный HTML с встроенными стилями и ссылками. Никаких внешних библиотек — только встроенные модули NodeJS: http, path.Задание обязано быть опубликовано в новом приватном репозитории организации GitHub с названием Группа_Фамилия_task-8.(пусто)Создайте HTTP-сервер на NodeJS, который:
 GET / — отдаёт главную страницу со списком всех задач GET /task/:id — отдаёт страницу одной задачи, где :id — целое число (например, /task/2)
 const tasks = [ { id: 1, title: 'Выучить JavaScript', completed: false }, { id: 2, title: 'Создать Todo-приложение', completed: true }, { id: 3, title: 'Настроить сервер', completed: false }
 ]; Заголовком &lt;h1&gt;Мои задачи&lt;/h1&gt;
@@ -53,7 +112,7 @@ Content-Type: text/html Если :id не существует в массиве
 &lt;/body&gt;
 &lt;/html&gt;
 На выполнение выделяется 3 практических пары.
-Градация баллов после дедлайна: 1 пара: 50% 2 пара: 25% 3 пара: 0% ]]></description><link>задания/секция-1.-javascript/практика-№8.-ssr-сервер-с-динамической-генерацией-страниц.html</link><guid isPermaLink="false">Задания/Секция 1. JavaScript/Практика №8. SSR-сервер с динамической генерацией страниц.md</guid><pubDate>Wed, 01 Oct 2025 18:13:40 GMT</pubDate></item><item><title><![CDATA[Вкратце о REST]]></title><description><![CDATA[REST — это архитектурный подход для построения веб-сервисов, основанный на использовании стандартных HTTP-методов для работы с ресурсами. Подробнее с ним мы познакомимся в соответствующей теме, но некоторые основы стоит показать сейчас:
+Градация баллов после дедлайна: 1 пара: 50% 2 пара: 25% 3 пара: 0% ]]></description><link>задания/секция-1.-javascript/практика-№8.-ssr-сервер-с-динамической-генерацией-страниц.html</link><guid isPermaLink="false">Задания/Секция 1. JavaScript/Практика №8. SSR-сервер с динамической генерацией страниц.md</guid><pubDate>Thu, 02 Oct 2025 04:06:43 GMT</pubDate></item><item><title><![CDATA[Вкратце о REST]]></title><description><![CDATA[REST — это архитектурный подход для построения веб-сервисов, основанный на использовании стандартных HTTP-методов для работы с ресурсами. Подробнее с ним мы познакомимся в соответствующей теме, но некоторые основы стоит показать сейчас:
 Ресурсы — сущности, которые можно запросить: /users, /tasks, /products Методы HTTP — действия над ресурсами: GET — получить список или один элемент POST — создать новый ресурс PUT / PATCH — обновить существующий DELETE — удалить ресурс Состояние — сервер не хранит сессию клиента (stateless). Каждый запрос должен содержать всё необходимое для обработки (например, токен авторизации в заголовке).
 Пример запросов:GET /api/users → список пользователей
 POST /api/users → создать нового пользователя
