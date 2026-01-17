@@ -1,4 +1,202 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MobileDevTisbi]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>MobileDevTisbi</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 17 Oct 2025 18:27:07 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 17 Oct 2025 18:26:28 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Тема №15. Хранение и передача данных в React]]></title><description><![CDATA[В этой теме вы изучите механизмы управления состоянием и передачи данных между компонентами в React — основу для построения интерактивных интерфейсов. Поймёте, как хранить данные внутри компонента с помощью хуков, как передавать их через свойства и как сохранять их между сессиями — что критично для обеспечения постоянства пользовательских настроек и кэширования информации.
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MobileDevTisbi]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>MobileDevTisbi</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 17 Jan 2026 09:49:48 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 17 Jan 2026 09:49:43 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Тема №17. Hooks в React]]></title><description><![CDATA[В этой теме вы изучите Hooks — функции, позволяющие использовать состояние и другие возможности React в функциональных компонентах. Поймёте, как работают основные встроенные хуки, когда и зачем их применять, а также принципы их использования: правила вызова, зависимостей и побочных эффектов. Это фундамент для написания чистого, переиспользуемого и эффективного кода в React-приложениях.
+<a data-href="Что такое Hooks" href="материалы/подтемы/впроцессе/что-такое-hooks.html" class="internal-link" target="_self" rel="noopener nofollow">Что такое Hooks</a>
+<br><a data-href="Правила использования Hooks" href=".html" class="internal-link" target="_self" rel="noopener nofollow">Правила использования Hooks</a>
+<br><a data-href="useEffect" href=".html" class="internal-link" target="_self" rel="noopener nofollow">useEffect</a>
+<br><a data-href="useContext" href=".html" class="internal-link" target="_self" rel="noopener nofollow">useContext</a>
+<br><a data-href="Пользовательские Hooks" href=".html" class="internal-link" target="_self" rel="noopener nofollow">Пользовательские Hooks</a>
+(пусто)<br><a data-href="Тема №18. Routers в React" href=".html" class="internal-link" target="_self" rel="noopener nofollow">Тема №18. Routers в React</a>]]></description><link>лекции/секция-2.-react/тема-№17.-hooks-в-react.html</link><guid isPermaLink="false">Лекции/Секция 2. React/Тема №17. Hooks в React.md</guid><pubDate>Sat, 17 Jan 2026 09:47:09 GMT</pubDate></item><item><title><![CDATA[Тема №16. События и Ref в React]]></title><description><![CDATA[В этой теме вы изучите обработку пользовательских событий и работу с референсами в React — ключевые механизмы для взаимодействия с DOM-элементами и управления состоянием, которое не требует перерисовки интерфейса. Поймёте, как реагировать на действия пользователя (клики, ввод, фокус) и когда использовать ref вместо состояния для доступа к элементам или их значениям.
+<a data-href="Обработка событий в React" href="материалы/подтемы/секция-2.-react/тема-№16/обработка-событий-в-react.html" class="internal-link" target="_self" rel="noopener nofollow">Обработка событий в React</a>
+<br><a data-href="Что такое Ref" href="материалы/подтемы/секция-2.-react/тема-№16/что-такое-ref.html" class="internal-link" target="_self" rel="noopener nofollow">Что такое Ref</a>
+<br><a data-href="Работа с формами" href="материалы/подтемы/секция-2.-react/тема-№16/работа-с-формами.html" class="internal-link" target="_self" rel="noopener nofollow">Работа с формами</a>
+(пусто)<br><a data-href="Тема №17. Hooks в React" href="лекции/секция-2.-react/тема-№17.-hooks-в-react.html" class="internal-link" target="_self" rel="noopener nofollow">Тема №17. Hooks в React</a>]]></description><link>лекции/секция-2.-react/тема-№16.-события-и-ref-в-react.html</link><guid isPermaLink="false">Лекции/Секция 2. React/Тема №16. События и Ref в React.md</guid><pubDate>Sat, 17 Jan 2026 09:44:53 GMT</pubDate></item><item><title><![CDATA[Когда использовать Ref, а когда — State]]></title><description><![CDATA[Выбор между useRef и useState определяется одной простой идеей: нужно ли, чтобы изменение значения вызывало перерисовку компонента?Значение влияет на то, что пользователь видит. Например:
+Текст в поле ввода, который отображается где-то ещё
+Состояние кнопки (активна/неактивна)
+Выбранная вкладка или тема интерфейса
+Список задач, фильтры, ошибки валидации
+const [count, setCount] = useState(0);
+// При setCount(1) компонент перерисуется — это необходимо,
+// если, например, вы показываете "Счётчик: 1"
+useState — основной инструмент для управления данными, которые определяют внешний вид приложения.Значение нужно только для логики, но не влияет на отображение. Например:
+Ссылка на DOM-элемент (для фокуса, прокрутки, измерения)
+Хранение предыдущего значения пропса или состояния
+Идентификатор таймера (setTimeout, setInterval)
+Кэш дорогих вычислений
+Счётчик попыток, логирование, технические данные
+const timerIdRef = useRef(null);
+// Изменение timerIdRef.current не должно перерисовывать UI —
+// оно нужно только для остановки таймера позже Если вы используете значение внутри JSX ({value}), — это состояние.
+Если вы используете значение только в функциях, эффектах или обработчиках, — это ref. Контролируемая форма: useState — потому что вы можете показывать ошибку, кнопку активировать/деактивировать, делать предпросмотр.
+Неконтролируемая форма: useRef — если вы просто читаете данные при отправке и ничего не отображаете на основе ввода. Использовать ref для данных в JSX — компонент не обновится, даже если значение изменилось.
+Использовать state для таймеров или DOM-ссылок — это вызовет лишние ререндеры и усложнит код.
+В подавляющем большинстве случаев начинайте с useState. Переходите к useRef только тогда, когда убедитесь, что перерисовка не нужна и мешает производительности или логике.]]></description><link>материалы/подтемы/секция-2.-react/тема-№16/когда-использовать-ref,-а-когда-—-state.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №16/Когда использовать Ref, а когда — State.md</guid><pubDate>Sat, 17 Jan 2026 09:40:11 GMT</pubDate></item><item><title><![CDATA[Неконтролируемые компоненты]]></title><description><![CDATA[Неконтролируемые компоненты — это элементы формы, значение которых управляется самим DOM, а не состоянием React. Вместо того чтобы синхронизировать каждое изменение с useState, вы позволяете браузеру хранить данные и читаете их только тогда, когда они нужны — например, при отправке формы.Для создания неконтролируемого компонента:
+Используйте useRef, чтобы получить ссылку на DOM-элемент
+Пропустите привязку value к состоянию
+При необходимости прочитайте значение через ref.current.value
+Пример:function UncontrolledInput() { const inputRef = useRef(null); function handleClick() { console.log('Текущее значение:', inputRef.current.value); } return ( &lt;&gt; &lt;input ref={inputRef} defaultValue="начальное значение" /&gt; &lt;button onClick={handleClick}&gt;Показать значение&lt;/button&gt; &lt;/&gt; );
+}
+Обратите внимание: вместо value используется defaultValue. Это задаёт начальное значение, но не блокирует дальнейший ввод пользователя.Неконтролируемые компоненты уместны в следующих случаях:
+Большие формы, где управление каждым полем через состояние создаёт избыточную нагрузку
+Интеграция со сторонними библиотеками, которые напрямую работают с DOM (например, редакторы кода или карты)
+Одноразовый ввод, например, поиск или быстрая отправка данных без валидации
+Производительность: если поле обновляется очень часто (например, рисование или аудиовизуализация) Нет автоматической синхронизации с состоянием — вы сами решаете, когда читать данные
+Невозможно динамически изменить значение поля из кода (кроме как через ref.current.value = ..., что не рекомендуется)
+Валидация возможна только в момент чтения (например, при отправке), а не в реальном времени
+Неконтролируемые компоненты — допустимый, но менее распространённый подход. Используйте их осознанно, когда преимущества перевешивают потерю реактивности.]]></description><link>материалы/подтемы/секция-2.-react/тема-№16/неконтролируемые-компоненты.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №16/Неконтролируемые компоненты.md</guid><pubDate>Sat, 17 Jan 2026 09:39:28 GMT</pubDate></item><item><title><![CDATA[Контролируемые компоненты]]></title><description><![CDATA[Контролируемые компоненты — это элементы формы, значение которых управляется состоянием React. Вместо того чтобы позволять DOM хранить данные, React берёт управление на себя: каждое изменение обновляет состояние, а состояние определяет, что отображается.Для создания контролируемого компонента:
+Создайте состояние с помощью useState
+Привяжите значение поля к этому состоянию через value
+Обновляйте состояние при каждом изменении через onChange
+Пример текстового поля:function NameInput() { const [name, setName] = useState(''); return ( &lt;input value={name} onChange={(e) =&gt; setName(e.target.value)} placeholder="Введите имя" /&gt; );
+}
+Без value поле будет неконтролируемым. Без onChange оно станет «только для чтения» — пользователь не сможет его изменить.Контролируемые компоненты работают со всеми стандартными элементами формы:
+&lt;input type="text"&gt;, &lt;input type="password"&gt; и т.д. — через value
+&lt;textarea&gt; — также через value
+&lt;select&gt; — через value (может быть строкой или массивом для множественного выбора)
+&lt;input type="checkbox"&gt; и &lt;input type="radio"&gt; — через checked
+Пример выпадающего списка:function CitySelect() { const [city, setCity] = useState('moscow'); return ( &lt;select value={city} onChange={(e) =&gt; setCity(e.target.value)}&gt; &lt;option value="moscow"&gt;Москва&lt;/option&gt; &lt;option value="spb"&gt;Санкт-Петербург&lt;/option&gt; &lt;/select&gt; );
+} Полный контроль: вы всегда знаете текущее значение
+Валидация в реальном времени: можно блокировать недопустимый ввод
+Преобразование данных: например, приведение к верхнему регистру или форматирование номера телефона
+Синхронизация: значение легко использовать в других частях приложения Требует больше кода, особенно для больших форм
+Может снижать производительность при очень частых обновлениях (в таких случаях можно использовать useDeferredValue или оптимизировать)
+Контролируемые компоненты — основной и рекомендуемый способ работы с формами в React, так как они соответствуют декларативной философии фреймворка.]]></description><link>материалы/подтемы/секция-2.-react/тема-№16/контролируемые-компоненты.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №16/Контролируемые компоненты.md</guid><pubDate>Sat, 17 Jan 2026 09:38:28 GMT</pubDate></item><item><title><![CDATA[Работа с формами]]></title><description><![CDATA[В React формы могут быть реализованы двумя основными способами: через контролируемые и неконтролируемые компоненты. Выбор между ними зависит от того, как вы управляете данными ввода — через состояние React или напрямую через DOM.В контролируемых компонентах значение поля ввода управляется состоянием React. Это означает, что:
+Значение элемента задаётся через пропс value (или checked для чекбоксов)
+Любое изменение обрабатывается через onChange, который обновляет состояние
+React всегда «владеет» текущим значением
+Пример:function ControlledForm() { const [name, setName] = useState(''); return ( &lt;form&gt; &lt;input value={name} onChange={(e) =&gt; setName(e.target.value)} placeholder="Введите имя" /&gt; &lt;p&gt;Вы ввели: {name}&lt;/p&gt; &lt;/form&gt; );
+}
+<a data-href="Контролируемые компоненты" href="материалы/подтемы/секция-2.-react/тема-№16/контролируемые-компоненты.html" class="internal-link" target="_self" rel="noopener nofollow">Контролируемые компоненты</a> — рекомендуемый подход в большинстве случаев, так как они:
+Предсказуемы
+Позволяют легко валидировать и преобразовывать ввод
+Интегрируются с состоянием приложения
+В неконтролируемых компонентах данные хранятся в самом DOM-элементе. React не управляет значением — вместо этого вы используете ref, чтобы прочитать его при необходимости.Пример:function UncontrolledForm() { const inputRef = useRef(null); function handleSubmit(e) { e.preventDefault(); console.log('Значение:', inputRef.current.value); } return ( &lt;form onSubmit={handleSubmit}&gt; &lt;input ref={inputRef} defaultValue="" /&gt; &lt;button type="submit"&gt;Отправить&lt;/button&gt; &lt;/form&gt; );
+}
+<br><a data-href="Неконтролируемые компоненты" href="материалы/подтемы/секция-2.-react/тема-№16/неконтролируемые-компоненты.html" class="internal-link" target="_self" rel="noopener nofollow">Неконтролируемые компоненты</a> полезны, когда:
+Форма очень большая, и управление каждым полем через состояние избыточно
+Интеграция с библиотеками, которые работают напрямую с DOM
+Временные или одноразовые формы, где валидация не требуется
+Выбор между ref и useState для форм зависит от цели: Используйте состояние (useState), если: Значение влияет на отображение (например, предварительный просмотр, кнопка активна/неактивна)
+Требуется валидация в реальном времени
+Данные нужны в других частях приложения Используйте ref, если: Значение нужно только в момент отправки
+Вы работаете с большим количеством полей, и синхронизация состояния слишком затратна
+Элемент используется для технических целей (например, фокусировка) Важно: даже в неконтролируемых формах можно комбинировать подходы — например, использовать ref для большинства полей, но state для кнопки «Отправить», которая должна быть недоступна, пока не заполнено обязательное поле.]]></description><link>материалы/подтемы/секция-2.-react/тема-№16/работа-с-формами.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №16/Работа с формами.md</guid><pubDate>Sat, 17 Jan 2026 09:37:46 GMT</pubDate></item><item><title><![CDATA[Ограничения и рекомендации]]></title><description><![CDATA[Хотя useRef — мощный инструмент, его неправильное использование может привести к трудноуловимым ошибкам и нарушению принципов React. Вот ключевые ограничения и рекомендации.Изменение ref.current внутри тела компонента (не в эффектах или обработчиках) нарушает чистоту рендера:// Плохо
+function BadComponent() { const ref = useRef(0); ref.current = ref.current + 1; // мутирует при каждом рендере return &lt;div&gt;{ref.current}&lt;/div&gt;;
+}
+Это приводит к непредсказуемому поведению, особенно при использовании строгого режима или будущих асинхронных рендереров.Правильно — обновлять ref.current только в useEffect, обработчиках событий или колбэках.Если значение должно отображаться в интерфейсе или влиять на то, что пользователь видит, используйте useState:// Избегайте
+const countRef = useRef(0);
+// ...и где-то: countRef.current += 1
+// но в JSX: {countRef.current} — это работает, но нарушает реактивность // Правильно
+const [count, setCount] = useState(0);
+React не будет знать, что нужно обновить компонент, если вы измените только ref.React построен на декларативной модели: вы описываете, как должен выглядеть интерфейс, а не как его изменить. Прямое изменение DOM через ref:
+Ломает предсказуемость
+Усложняет тестирование
+Может конфликтовать с обновлениями React
+Используйте ref только тогда, когда нет другого способа: фокус, измерение размеров, работа с медиа, интеграция со сторонними библиотеками.Если вы попытаетесь передать ref в обычный функциональный компонент, React проигнорирует его:// Не сработает
+function MyInput() { return &lt;input /&gt;;
+}
+// ...
+&lt;MyInput ref={myRef} /&gt; // myRef.current будет null
+Чтобы исправить, используйте forwardRef:// const MyInput = forwardRef((props, ref) =&gt; { return &lt;input ref={ref} {...props} /&gt;;
+}); Используйте ref только для задач, которые невозможно решить через state и props.
+Обновляйте ref.current вне фазы рендера.
+Предпочитайте управляемые компоненты (useState + onChange) неконтролируемым (ref + value), если нет веской причины.
+Помните: React — про данные, а не про DOM. Ref — исключение, а не правило.
+]]></description><link>материалы/подтемы/секция-2.-react/тема-№16/ограничения-и-рекомендации.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №16/Ограничения и рекомендации.md</guid><pubDate>Sat, 17 Jan 2026 09:34:43 GMT</pubDate></item><item><title><![CDATA[Использование useRef для хранения значений]]></title><description><![CDATA[Хук useRef можно использовать не только для доступа к DOM-элементам, но и для хранения любых изменяемых значений, которые должны сохраняться между рендерами, но не должны вызывать перерисовку компонента.Значение, хранящееся в ref.current, остаётся неизменным в течение всего жизненного цикла компонента, если вы его явно не измените. При этом:
+Изменение ref.current не запускает повторный рендер.
+Значение доступно во всех обработчиках, эффектах и даже внутри замыканий без потери актуальности (в отличие от переменных в теле компонента).
+Полезно для сравнения текущего и предыдущего состояния или пропса:function usePrevious(value) { const ref = useRef(); useEffect(() =&gt; { ref.current = value; }); return ref.current;
+} function Counter({ count }) { const prevCount = usePrevious(count); return &lt;p&gt;Сейчас: {count}, было: {prevCount}&lt;/p&gt;;
+}
+Чтобы избежать создания новых таймеров при каждом рендере:function Timer() { const intervalRef = useRef(null); useEffect(() =&gt; { intervalRef.current = setInterval(() =&gt; { console.log('Тик'); }, 1000); return () =&gt; clearInterval(intervalRef.current); }, []); function stopTimer() { clearInterval(intervalRef.current); } return &lt;button onClick={stopTimer}&gt;Остановить&lt;/button&gt;;
+}
+Если вычисление зависит от внешних данных и не должно зависеть от ререндера:function ExpensiveComponent({ data }) { const cacheRef = useRef(null); if (!cacheRef.current || cacheRef.current.input !== data) { cacheRef.current = { input: data, output: heavyComputation(data) }; } return &lt;div&gt;{cacheRef.current.output}&lt;/div&gt;;
+} useState — для данных, влияющих на UI (изменение → рендер).
+useRef — для данных, нужных «внутри» логики, но не отображаемых напрямую.
+Например, счётчик попыток авторизации, который не отображается, но используется в фоне — хороший кандидат для ref.
+Не мутируйте ref.current во время рендера (например, внутри основного тела компонента). Это может привести к непредсказуемому поведению.
+Значение в ref не сериализуется и не сохраняется при горячей перезагрузке (HMR), если не предусмотрена дополнительная логика.
+Использование useRef для хранения значений — это способ сохранить "память" компонента без лишних ререндеров.]]></description><link>материалы/подтемы/секция-2.-react/тема-№16/использование-useref-для-хранения-значений.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №16/Использование useRef для хранения значений.md</guid><pubDate>Sat, 17 Jan 2026 09:33:03 GMT</pubDate></item><item><title><![CDATA[Использование useRef для DOM-элементов]]></title><description><![CDATA[Хук useRef позволяет получить прямую ссылку на реальный DOM-элемент, что бывает необходимо, когда стандартного управления через состояние недостаточно.Чтобы связать ref с DOM-элементом, передайте его в атрибут ref:const inputRef = useRef(null); return &lt;input ref={inputRef} type="text" /&gt;;
+После монтирования компонента inputRef.current будет содержать настоящий HTML-элемент &lt;input&gt;.Автоматически установить фокус на поле ввода при открытии формы:function AutoFocusInput() { const inputRef = useRef(null); useEffect(() =&gt; { inputRef.current.focus(); }, []); return &lt;input ref={inputRef} /&gt;;
+}
+Иногда удобно прочитать значение поля напрямую, особенно в неконтролируемых компонентах:function Form() { const inputRef = useRef(null); function handleSubmit() { console.log('Значение:', inputRef.current.value); } return ( &lt;form onSubmit={(e) =&gt; { e.preventDefault(); handleSubmit(); }}&gt; &lt;input ref={inputRef} defaultValue="" /&gt; &lt;button type="submit"&gt;Отправить&lt;/button&gt; &lt;/form&gt; );
+}
+Пример с видео:function VideoPlayer() { const videoRef = useRef(null); function play() { videoRef.current.play(); } function pause() { videoRef.current.pause(); } return ( &lt;&gt; &lt;video ref={videoRef} src="movie.mp4" /&gt; &lt;button onClick={play}&gt;▶️&lt;/button&gt; &lt;button onClick={pause}&gt;⏸️&lt;/button&gt; &lt;/&gt; );
+} ref.current становится доступен только после того, как React создаст соответствующий DOM-узел (обычно внутри useEffect).
+Не пытайтесь читать или изменять ref.current во время рендера — это может привести к ошибкам.
+Ref работает только с DOM-элементами и классовыми компонентами. Для функциональных компонентов требуется forwardRef.
+Прямой доступ к DOM через useRef — мощный инструмент, но его следует использовать только тогда, когда невозможно обойтись state и props.]]></description><link>материалы/подтемы/секция-2.-react/тема-№16/использование-useref-для-dom-элементов.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №16/Использование useRef для DOM-элементов.md</guid><pubDate>Sat, 17 Jan 2026 09:31:31 GMT</pubDate></item><item><title><![CDATA[Что такое Ref]]></title><description><![CDATA[Ref (сокращение от reference) в React — это способ получить прямой доступ к DOM-элементу или сохранить значение, которое не вызывает перерисовку компонента при изменении. Ref особенно полезен, когда нужно работать с элементами вне обычного потока данных через props и state.Для создания ref используется хук useRef:const myRef = useRef(initialValue);
+После этого myRef.current содержит текущее значение. При первом рендере myRef.current равно переданному начальному значению.Чтобы привязать ref к DOM-элементу, передайте его в атрибут ref:&lt;input ref={myRef} /&gt;
+Теперь myRef.current будет ссылаться на настоящий DOM-элемент &lt;input&gt;.Основное отличие useRef от useState:
+Изменение ref.current не вызывает повторный рендер компонента.
+ref предназначен для хранения данных, которые нужны между рендерами, но не влияют на то, как компонент выглядит.
+Это делает ref идеальным для:
+Хранения ссылок на таймеры, интервалы или внешние объекты
+Сохранения предыдущих значений props или state
+Прямого взаимодействия с DOM (фокус, измерение размеров, воспроизведение видео)
+Используйте ref, когда:
+Нужно управлять фокусом, выделением текста или воспроизведением медиа
+Требуется доступ к DOM-методам (например, scrollIntoView)
+Необходимо хранить значение, которое не должно влиять на UI
+Не используйте ref для данных, которые определяют внешний вид компонента — для этого подходит useState.<a data-href="Использование useRef для DOM-элементов" href="материалы/подтемы/секция-2.-react/тема-№16/использование-useref-для-dom-элементов.html" class="internal-link" target="_self" rel="noopener nofollow">Использование useRef для DOM-элементов</a><br>
+<a data-href="Использование useRef для хранения значений" href="материалы/подтемы/секция-2.-react/тема-№16/использование-useref-для-хранения-значений.html" class="internal-link" target="_self" rel="noopener nofollow">Использование useRef для хранения значений</a><br>
+<a data-href="Ограничения и рекомендации" href="материалы/подтемы/секция-2.-react/тема-№16/ограничения-и-рекомендации.html" class="internal-link" target="_self" rel="noopener nofollow">Ограничения и рекомендации</a>]]></description><link>материалы/подтемы/секция-2.-react/тема-№16/что-такое-ref.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №16/Что такое Ref.md</guid><pubDate>Sat, 17 Jan 2026 09:30:57 GMT</pubDate></item><item><title><![CDATA[onFocus и onBlur]]></title><description><![CDATA[События onFocus и onBlur позволяют отслеживать, когда элемент получает или теряет фокус. Они особенно полезны для полей ввода, кнопок и других интерактивных элементов.Событие onFocus срабатывает, когда пользователь переходит на элемент — например, кликает по полю ввода или перемещается к нему с помощью клавиши Tab.function InputWithFocus() { function handleFocus() { console.log('Поле получило фокус'); } return &lt;input onFocus={handleFocus} /&gt;;
+}
+Событие onBlur срабатывает, когда элемент теряет фокус — например, пользователь кликает вне поля или переключается на другой элемент.function InputWithBlur() { function handleBlur() { console.log('Поле потеряло фокус'); } return &lt;input onBlur={handleBlur} /&gt;;
+}
+Эти события часто используются вместе:
+Для показа подсказок или ошибок при потере фокуса (валидация «на лету»)
+Для скрытия/показа дополнительного интерфейса (например, календаря при фокусе на дате)
+Для отслеживания активного поля в сложных формах
+Пример: валидация email после того, как пользователь завершил ввод:function EmailInput() { const [email, setEmail] = useState(''); const [error, setError] = useState(''); function validate(value) { if (!value.includes('@')) { setError('Email должен содержать @'); } else { setError(''); } } return ( &lt;&gt; &lt;input value={email} onChange={(e) =&gt; setEmail(e.target.value)} onBlur={() =&gt; validate(email)} /&gt; {error &amp;&amp; &lt;span style={{ color: 'red' }}&gt;{error}&lt;/span&gt;} &lt;/&gt; );
+} onFocus и onBlur не всплывают так же, как другие события, но React нормализует их поведение.
+Эти события не срабатывают при программном изменении фокуса (например, через ref.current.focus()), если только не используется нативный DOM-метод напрямую.
+Использование onBlur для валидации предпочтительнее, чем onChange, если проверка дорогая или должна происходить только после завершения ввода.
+События onFocus и onBlur помогают создавать более отзывчивый и удобный интерфейс, реагирующий на этапы взаимодействия пользователя с элементами.]]></description><link>материалы/подтемы/секция-2.-react/тема-№16/onfocus-и-onblur.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №16/onFocus и onBlur.md</guid><pubDate>Sat, 17 Jan 2026 09:28:42 GMT</pubDate></item><item><title><![CDATA[onSubmit]]></title><description><![CDATA[Событие onSubmit срабатывает, когда пользователь отправляет форму — например, нажимает кнопку с type="submit" или вводит Enter в поле внутри формы.Обработчик onSubmit привязывается к элементу &lt;form&gt;:function Form() { function handleSubmit(event) { event.preventDefault(); // предотвращает перезагрузку страницы console.log('Форма отправлена'); } return ( &lt;form onSubmit={handleSubmit}&gt; &lt;input type="text" name="username" /&gt; &lt;button type="submit"&gt;Отправить&lt;/button&gt; &lt;/form&gt; );
+}
+Без вызова event.preventDefault() браузер выполнит стандартное действие — отправит форму и перезагрузит страницу, что в React-приложениях почти всегда нежелательно.В управляемых компонентах данные обычно берутся из состояния:function Form() { const [username, setUsername] = useState(''); function handleSubmit(event) { event.preventDefault(); console.log('Имя пользователя:', username); } return ( &lt;form onSubmit={handleSubmit}&gt; &lt;input type="text" value={username} onChange={(e) =&gt; setUsername(e.target.value)} /&gt; &lt;button type="submit"&gt;Отправить&lt;/button&gt; &lt;/form&gt; );
+}
+В неконтролируемых формах можно использовать ref для доступа к значениям напрямую.
+Кнопка внутри формы по умолчанию имеет type="submit", если не указано иное. Чтобы избежать случайной отправки, явно указывайте type="button" для обычных кнопок.
+Событие onSubmit всплывает, но его можно остановить с помощью event.stopPropagation(), если нужно изолировать обработку.
+Отправка формы возможна не только через кнопку: нажатие Enter в текстовом поле также вызывает onSubmit.
+Событие onSubmit — центральный механизм обработки пользовательского ввода в формах и основа для валидации, отправки данных на сервер и управления состоянием приложения.]]></description><link>материалы/подтемы/секция-2.-react/тема-№16/onsubmit.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №16/onSubmit.md</guid><pubDate>Sat, 17 Jan 2026 09:28:11 GMT</pubDate></item><item><title><![CDATA[onChange]]></title><description><![CDATA[Событие onChange срабатывает, когда пользователь изменяет значение элемента формы — например, вводит текст в поле, выбирает опцию в выпадающем списке или ставит галочку в чекбоксе.Обработчик onChange обычно используется вместе с управляемыми компонентами, где значение поля контролируется состоянием React:function InputField() { const [value, setValue] = useState(''); function handleChange(event) { setValue(event.target.value); } return &lt;input value={value} onChange={handleChange} /&gt;;
+}
+Каждый ввод обновляет состояние, и React немедленно отображает новое значение.В обработчик передаётся объект события. Чтобы получить текущее значение поля, используйте event.target.value:function handleChange(event) { console.log('Текущее значение:', event.target.value);
+}
+Для чекбоксов и радиокнопок значение находится в event.target.checked.function Checkbox() { const [checked, setChecked] = useState(false); function handleChange(event) { setChecked(event.target.checked); } return &lt;input type="checkbox" checked={checked} onChange={handleChange} /&gt;;
+} onChange срабатывает при любом изменении, а не только при потере фокуса (в отличие от нативного DOM-события change в некоторых старых браузерах).
+В React это событие нормализовано: оно работает одинаково для всех типов полей ввода.
+Не используйте onChange без управления значением через value (или checked) — это приведёт к неконтролируемому поведению и предупреждениям в консоли.
+Событие onChange — основа для создания интерактивных форм в React и ключевой элемент паттерна управляемых компонентов.]]></description><link>материалы/подтемы/секция-2.-react/тема-№16/onchange.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №16/onChange.md</guid><pubDate>Sat, 17 Jan 2026 09:26:56 GMT</pubDate></item><item><title><![CDATA[onClick]]></title><description><![CDATA[Событие onClick срабатывает, когда пользователь нажимает на элемент — например, кнопку, ссылку или любой другой кликабельный компонент.Обработчик onClick передаётся как пропс в JSX-элемент:&lt;button onClick={handleClick}&gt;Нажми меня&lt;/button&gt;
+Функция handleClick будет вызвана при каждом клике. Она может быть определена внутри компонента:function Button() { function handleClick() { console.log('Кнопка нажата'); } return &lt;button onClick={handleClick}&gt;Нажми&lt;/button&gt;;
+}
+Обработчик может принимать объект события как аргумент:function handleClick(event) { console.log(event.target); // элемент, по которому кликнули
+}
+Это позволяет получать информацию о контексте клика, например, значение кнопки или её атрибуты.Если нужно передать данные в обработчик, используйте стрелочную функцию:&lt;button onClick={() =&gt; handleDelete(id)}&gt;Удалить&lt;/button&gt;
+Важно: не вызывайте функцию напрямую (onClick={handleDelete(id)}), иначе она выполнится сразу при рендере.
+onClick работает на любом элементе, даже если он не интерактивный (например, &lt;div&gt;), но для доступности лучше использовать семантические теги (&lt;button&gt;) или добавлять role="button".
+В мобильных браузерах onClick может иметь небольшую задержку; для мгновенного отклика иногда используют onTouchStart, но это редко требуется в современных приложениях.
+]]></description><link>материалы/подтемы/секция-2.-react/тема-№16/onclick.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №16/onClick.md</guid><pubDate>Sat, 17 Jan 2026 09:26:21 GMT</pubDate></item><item><title><![CDATA[Обработка событий в React]]></title><description><![CDATA[В React обработка событий — это механизм, позволяющий компонентам реагировать на действия пользователя: клики, ввод текста, отправку формы, фокус и другие взаимодействия. События в React похожи на события в DOM, но имеют несколько важных отличий.Имена событий в React пишутся в camelCase, а не в нижнем регистре, как в HTML. Например:
+<a data-href="onClick" href="материалы/подтемы/секция-2.-react/тема-№16/onclick.html" class="internal-link" target="_self" rel="noopener nofollow">onClick</a> вместо onclick
+<br><a data-href="onChange" href="материалы/подтемы/секция-2.-react/тема-№16/onchange.html" class="internal-link" target="_self" rel="noopener nofollow">onChange</a> вместо onchange
+<br><a data-href="onSubmit" href="материалы/подтемы/секция-2.-react/тема-№16/onsubmit.html" class="internal-link" target="_self" rel="noopener nofollow">onSubmit</a> вместо onsubmit
+Обработчик передаётся как функция, а не как строка:// Правильно
+&lt;button onClick={handleClick}&gt;Нажми&lt;/button&gt; // Неправильно
+&lt;button onClick={handleClick()}&gt;Нажми&lt;/button&gt;
+Вызов handleClick() при передаче приведёт к немедленному выполнению функции при каждом рендере, а не при клике.React поддерживает стандартные события пользовательского взаимодействия:
+<br><a data-href="onClick" href="материалы/подтемы/секция-2.-react/тема-№16/onclick.html" class="internal-link" target="_self" rel="noopener nofollow">onClick</a> — нажатие кнопки или другого элемента
+<br><a data-href="onChange" href="материалы/подтемы/секция-2.-react/тема-№16/onchange.html" class="internal-link" target="_self" rel="noopener nofollow">onChange</a> — изменение значения в &lt;input&gt;, &lt;select&gt; или &lt;textarea&gt;
+<br><a data-href="onSubmit" href="материалы/подтемы/секция-2.-react/тема-№16/onsubmit.html" class="internal-link" target="_self" rel="noopener nofollow">onSubmit</a> — отправка формы
+<br><a data-href="onFocus и onBlur" href="материалы/подтемы/секция-2.-react/тема-№16/onfocus-и-onblur.html" class="internal-link" target="_self" rel="noopener nofollow">onFocus и onBlur</a> — получение и потеря фокуса
+Пример обработки отправки формы:function Form() { function handleSubmit(event) { event.preventDefault(); // отменяет перезагрузку страницы console.log('Форма отправлена'); } return ( &lt;form onSubmit={handleSubmit}&gt; &lt;input type="text" /&gt; &lt;button type="submit"&gt;Отправить&lt;/button&gt; &lt;/form&gt; );
+}
+Обработчики получают в качестве аргумента объект события (event). Он содержит информацию о произошедшем действии и методы для управления поведением по умолчанию.Часто используемые методы:
+event.preventDefault() — отменяет стандартное действие (например, отправку формы)
+event.stopPropagation() — останавливает всплытие события вверх по дереву DOM
+Пример:function handleClick(event) { event.stopPropagation(); console.log('Клик только на эту кнопку');
+} Обработчики не вызываются автоматически — они срабатывают только при соответствующем пользовательском действии.
+Функция-обработчик должна быть передана, а не вызвана.
+Все события в React нормализованы: они работают одинаково во всех браузерах, даже если нативные события отличаются.
+]]></description><link>материалы/подтемы/секция-2.-react/тема-№16/обработка-событий-в-react.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №16/Обработка событий в React.md</guid><pubDate>Sat, 17 Jan 2026 09:24:49 GMT</pubDate></item><item><title><![CDATA[Тема №15. Хранение и передача данных в React]]></title><description><![CDATA[В этой теме вы изучите механизмы управления состоянием и передачи данных между компонентами в React — основу для построения интерактивных интерфейсов. Поймёте, как хранить данные внутри компонента с помощью хуков, как передавать их через свойства и как сохранять их между сессиями — что критично для обеспечения постоянства пользовательских настроек и кэширования информации.
 <a data-href="Состояние и хук useState" href="материалы/подтемы/секция-2.-react/тема-№15/состояние-и-хук-usestate.html" class="internal-link" target="_self" rel="noopener nofollow">Состояние и хук useState</a>
 <br><a data-href="Передача данных через props" href="материалы/подтемы/секция-2.-react/тема-№15/передача-данных-через-props.html" class="internal-link" target="_self" rel="noopener nofollow">Передача данных через props</a>
 <br><a data-href="Хранение данных между сессиями" href="материалы/подтемы/секция-2.-react/тема-№15/хранение-данных-между-сессиями.html" class="internal-link" target="_self" rel="noopener nofollow">Хранение данных между сессиями</a> <br><a data-href="Практика №10. Интерактивный счётчик с изменением темы" href="задания/секция-2.-react/практика-№10.-интерактивный-счётчик-с-изменением-темы.html" class="internal-link" target="_self" rel="noopener nofollow">Практика №10. Интерактивный счётчик с изменением темы</a>
