@@ -1,4 +1,160 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MobileDevTisbi]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>MobileDevTisbi</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 20 Jan 2026 18:55:40 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 20 Jan 2026 18:55:31 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Тема №15. Хранение и передача данных в React]]></title><description><![CDATA[В этой теме вы изучите механизмы управления состоянием и передачи данных между компонентами в React — основу для построения интерактивных интерфейсов. Поймёте, как хранить данные внутри компонента с помощью хуков, как передавать их через свойства и как сохранять их между сессиями — что критично для обеспечения постоянства пользовательских настроек и кэширования информации.
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MobileDevTisbi]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>MobileDevTisbi</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 04 Feb 2026 06:56:26 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 04 Feb 2026 06:56:18 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Тема №20. Основы TypeScript]]></title><description><![CDATA[В этой теме вы познакомитесь с TypeScript как языком, расширяющим JavaScript статической типизацией. Поймёте, зачем он нужен, как он соотносится с JavaScript и почему его используют в крупных проектах. Вы узнаете, как TypeScript транспилируется в JavaScript, и научитесь писать базовый типизированный код без углубления в сложные конструкции.
+<a data-href="Что такое TypeScript" href="материалы/подтемы/секция-2.-react/тема-№20/что-такое-typescript.html" class="internal-link" target="_self" rel="noopener nofollow">Что такое TypeScript</a>
+<br><a data-href="Настройка проекта с TypeScript" href="материалы/подтемы/секция-2.-react/тема-№20/настройка-проекта-с-typescript.html" class="internal-link" target="_self" rel="noopener nofollow">Настройка проекта с TypeScript</a>
+<br><a data-href="Базовые типы в TypeScript" href="материалы/подтемы/секция-2.-react/тема-№20/базовые-типы-в-typescript.html" class="internal-link" target="_self" rel="noopener nofollow">Базовые типы в TypeScript</a>
+(пусто)<br><a data-href="Тема №21. Типизация структур данных в TypeScript" href=".html" class="internal-link" target="_self" rel="noopener nofollow">Тема №21. Типизация структур данных в TypeScript</a>]]></description><link>лекции/секция-2.-react/тема-№20.-основы-typescript.html</link><guid isPermaLink="false">Лекции/Секция 2. React/Тема №20. Основы TypeScript.md</guid><pubDate>Wed, 04 Feb 2026 06:44:54 GMT</pubDate></item><item><title><![CDATA[Что такое TypeScript]]></title><description><![CDATA[TypeScript — это язык программирования, разработанный компанией Microsoft как надмножество JavaScript. Он добавляет к JavaScript статическую типизацию и другие возможности, которые помогают писать более надёжный и поддерживаемый код. Любая программа на JavaScript является корректной программой на TypeScript, что делает переход к нему постепенным и безопасным.В JavaScript типы переменных определяются во время выполнения (динамическая типизация). Это даёт гибкость, но может привести к ошибкам, которые проявляются только при запуске программы:function greet(name) { return "Hello, " + name.toUpperCase();
+}
+greet(); // вызов без аргумента → ошибка во время выполнения
+TypeScript проверяет типы ещё до запуска программы (статическая типизация). Ошибки выявляются на этапе написания кода или сборки:function greet(name: string) { return "Hello, " + name.toUpperCase();
+}
+greet(); // ошибка компиляции: отсутствует обязательный аргумент
+TypeScript не заменяет JavaScript. Наоборот, он полностью совместим с ним:
+Любой JavaScript-файл можно переименовать в .ts — он останется рабочим.
+Все существующие библиотеки JavaScript можно использовать в TypeScript.
+TypeScript добавляет синтаксис для описания типов, но не меняет поведение самого языка.
+Браузеры и среды выполнения (например, Node.js) понимают только JavaScript. Поэтому код на TypeScript должен быть преобразован (транспилирован) в JavaScript перед запуском. Это делает компилятор TypeScript (tsc):Исходный файл app.ts:const message: string = "Hello, TypeScript";
+console.log(message);
+После компиляции (tsc app.ts) получается app.js:var message = "Hello, TypeScript";
+console.log(message);
+Типы исчезают — они нужны только на этапе разработки.
+Раннее обнаружение ошибок: многие ошибки находятся ещё до запуска программы.
+Лучшее автодополнение: редакторы (VS Code, WebStorm и др.) предлагают точные подсказки благодаря информации о типах.
+Самодокументируемый код: типы явно описывают, какие данные ожидаются и возвращаются.
+Поддержка крупных проектов: упрощает рефакторинг и чтение чужого кода.
+TypeScript особенно полезен в командной разработке и при создании сложных приложений, где важно минимизировать количество неожиданных ошибок.]]></description><link>материалы/подтемы/секция-2.-react/тема-№20/что-такое-typescript.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №20/Что такое TypeScript.md</guid><pubDate>Wed, 04 Feb 2026 06:43:01 GMT</pubDate></item><item><title><![CDATA[Базовые типы в TypeScript]]></title><description><![CDATA[TypeScript предоставляет систему типов, которая позволяет явно указывать или автоматически выводить типы переменных, параметров функций и возвращаемых значений. Это помогает избежать ошибок и делает код понятнее.Основные примитивные типы в TypeScript совпадают с соответствующими значениями в JavaScript:
+string — текстовые данные number — числа (все числа в JS/TS имеют тип number, целые и дробные) boolean — логические значения (true / false) null — отсутствие значения (явный null) undefined — значение по умолчанию для неинициализированных переменных Пример:let name: string = "Alice";
+let age: number = 30;
+let isActive: boolean = true;
+TypeScript обычно выводит эти типы автоматически, поэтому явное указание часто избыточно:let name = "Alice"; // TypeScript выводит: string
+Тип any отключает проверку типов. Переменная типа any может принимать любое значение и использоваться в любом контексте:let data: any = "text";
+data = 42; // допустимо
+data.toUpperCase(); // допустимо, но может вызвать ошибку во время выполнения
+Использование any нарушает преимущества TypeScript и рекомендуется только при миграции старого кода или работе с динамическими данными, когда тип невозможно определить.Тип unknown представляет значение, тип которого неизвестен. В отличие от any, он безопасен: TypeScript требует проверки перед использованием:let data: unknown = "text"; // Ошибка: нельзя вызывать методы на unknown без проверки
+// data.toUpperCase(); if (typeof data === "string") { console.log(data.toUpperCase()); // теперь безопасно
+}
+unknown — предпочтительная замена any при работе с внешними данными (например, ответами от API).Тип void означает, что функция ничего не возвращает:function logMessage(message: string): void { console.log(message);
+}
+Если функция не имеет оператора return или содержит return; без значения, её тип возвращаемого значения — void.Тип never используется для функций, которые никогда не завершаются нормально — например, всегда выбрасывают ошибку или зацикливаются:function throwError(message: string): never { throw new Error(message);
+} function infiniteLoop(): never { while (true) {}
+}
+Тип never также возникает в случае исчерпывающей проверки типов (например, в switch), но это выходит за рамки базового уровня.TypeScript автоматически выводит типы на основе присвоенных значений:let count = 10; // тип: number
+Явное указание типа требуется, когда значение неизвестно на этапе инициализации или когда нужно сузить тип:let userId: string; // пока undefined, но позже получит строку
+userId = fetchUserId(); // функция возвращает string // Или при работе с DOM:
+const button = document.getElementById("submit") as HTMLButtonElement;
+Явная типизация особенно полезна в сигнатурах функций и интерфейсах, чтобы чётко определить контракт между частями программы.]]></description><link>материалы/подтемы/секция-2.-react/тема-№20/базовые-типы-в-typescript.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №20/Базовые типы в TypeScript.md</guid><pubDate>Wed, 04 Feb 2026 06:39:46 GMT</pubDate></item><item><title><![CDATA[Настройка проекта с TypeScript]]></title><description><![CDATA[Чтобы начать использовать TypeScript, необходимо настроить проект: установить компилятор, создать конфигурационный файл и (при необходимости) интегрировать TypeScript в существующий фреймворк, например React.TypeScript поставляется как пакет npm. Его можно установить глобально или локально в проекте. Рекомендуется устанавливать локально:npm install --save-dev typescript
+После установки доступна команда npx tsc для запуска компилятора.Файл tsconfig.json управляет поведением компилятора TypeScript. Он указывает, какие файлы обрабатывать и как транспилировать код. Создать его можно командой:npx tsc --init
+Эта команда генерирует базовый файл с закомментированными настройками. Основные опции:
+target — версия JavaScript, в которую будет транспилироваться код (например, "ES2016", "ES2020").
+outDir — папка, куда будут помещены скомпилированные .js-файлы.
+strict — включает строгую проверку типов (рекомендуется всегда использовать).
+Пример минимального tsconfig.json:{ "compilerOptions": { "target": "ES2020", "module": "commonjs", "strict": true, "outDir": "./dist", "rootDir": "./src" }, "include": ["src/**/*"]
+}
+После настройки можно компилировать проект командой:npx tsc
+Для новых проектов на React проще всего использовать шаблоны с поддержкой TypeScript:
+С Vite:
+npm create vite@latest my-app -- --template react-ts С Create React App:
+npx create-react-app my-app --template typescript Такие шаблоны уже содержат необходимые зависимости (typescript, @types/react, @types/node и др.) и готовый tsconfig.json.В уже существующем React-проекте можно добавить TypeScript вручную, но это требует установки типов и настройки сборки — поэтому для обучения предпочтительнее начинать с шаблонов.]]></description><link>материалы/подтемы/секция-2.-react/тема-№20/настройка-проекта-с-typescript.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №20/Настройка проекта с TypeScript.md</guid><pubDate>Wed, 04 Feb 2026 06:39:28 GMT</pubDate></item><item><title><![CDATA[Тема №19. Асинхронность в JavaScript]]></title><description><![CDATA[В этой теме вы изучите асинхронное выполнение кода в JavaScript — механизм, позволяющий выполнять длительные операции (например, запросы к серверу, чтение файлов, таймеры) без блокировки основного потока. Поймёте, как работают коллбэки, промисы и async/await, и как правильно обрабатывать результаты асинхронных действий. Это фундамент для работы с API, загрузки данных и управления состоянием в мобильных приложениях.
+<a data-href="Что такое асинхронность" href="материалы/подтемы/секция-2.-react/тема-№19/что-такое-асинхронность.html" class="internal-link" target="_self" rel="noopener nofollow">Что такое асинхронность</a>
+<br><a data-href="Коллбэки" href="материалы/подтемы/секция-2.-react/тема-№19/коллбэки.html" class="internal-link" target="_self" rel="noopener nofollow">Коллбэки</a>
+<br><a data-href="Промисы (Promise)" href="материалы/подтемы/секция-2.-react/тема-№19/промисы-(promise).html" class="internal-link" target="_self" rel="noopener nofollow">Промисы (Promise)</a>
+<br><a data-href="Async и await" href="материалы/подтемы/секция-2.-react/тема-№19/async-и-await.html" class="internal-link" target="_self" rel="noopener nofollow">Async и await</a>
+<br><a data-href="Разница между await и then()" href="материалы/подтемы/секция-2.-react/тема-№19/разница-между-await-и-then().html" class="internal-link" target="_self" rel="noopener nofollow">Разница между await и then()</a>
+<br><a data-href="Асинхронность и React" href="материалы/подтемы/секция-2.-react/тема-№19/асинхронность-и-react.html" class="internal-link" target="_self" rel="noopener nofollow">Асинхронность и React</a>
+(пусто)<br><a data-href="Тема №20. Основы TypeScript" href="лекции/секция-2.-react/тема-№20.-основы-typescript.html" class="internal-link" target="_self" rel="noopener nofollow">Тема №20. Основы TypeScript</a>]]></description><link>лекции/секция-2.-react/тема-№19.-асинхронность-в-javascript.html</link><guid isPermaLink="false">Лекции/Секция 2. React/Тема №19. Асинхронность в JavaScript.md</guid><pubDate>Wed, 04 Feb 2026 06:08:58 GMT</pubDate></item><item><title><![CDATA[Асинхронность и React]]></title><description><![CDATA[В React асинхронные операции, такие как загрузка данных с сервера, должны выполняться в правильном месте жизненного цикла компонента. Неправильное использование асинхронности может привести к ошибкам, утечкам памяти или обновлению состояния в уже размонтированном компоненте.В функциональных компонентах асинхронный код запускается внутри хука useEffect. Это гарантирует, что операция выполнится в нужный момент — например, при монтировании компонента или при изменении зависимостей.import { useEffect, useState } from 'react'; function UserProfile({ userId }) { const [user, setUser] = useState(null); const [loading, setLoading] = useState(true); useEffect(() =&gt; { const fetchUser = async () =&gt; { try { const response = await fetch(`/api/users/${userId}`); const data = await response.json(); setUser(data); } catch (error) { console.error('Ошибка загрузки пользователя:', error); } finally { setLoading(false); } }; fetchUser(); }, [userId]); // Зависимость: перезапускать при смене userId if (loading) return &lt;div&gt;Загрузка...&lt;/div&gt;; return &lt;div&gt;Имя: {user?.name}&lt;/div&gt;;
+}
+Следующий код недопустим:// Ошибка: нельзя использовать await вне async-функции
+const data = await fetch('/api/data');
+Компонент React — это обычная функция, и она должна синхронно возвращать JSX. Асинхронная логика должна быть изолирована внутри useEffect или вспомогательных функций.Если компонент размонтируется до завершения запроса, попытка обновить его состояние вызовет предупреждение. Чтобы этого избежать, можно использовать флаг:useEffect(() =&gt; { let isMounted = true; const fetchUser = async () =&gt; { const data = await fetch(`/api/users/${userId}`).then(r =&gt; r.json()); if (isMounted) { setUser(data); } }; fetchUser(); return () =&gt; { isMounted = false; // cleanup при размонтировании };
+}, [userId]);
+В большинстве случаев React Native подавляет такие ошибки, но хорошая практика — предотвращать их явно.При асинхронных операциях рекомендуется управлять тремя состояниями:
+loading — идёт загрузка
+data — успешный результат
+error — произошла ошибка
+Это улучшает UX и помогает избежать неопределённого поведения.
+Все побочные эффекты (запросы, подписки, таймеры) — только в useEffect
+Асинхронная функция внутри useEffect должна быть объявлена отдельно или как немедленно вызываемая стрелочная функция
+Не забывайте указывать зависимости в массиве useEffect, чтобы избежать устаревших замыканий
+Избегайте запуска асинхронных операций в обработчиках рендера (например, прямо в теле компонента)
+Асинхронность в React требует дисциплины, но при правильном подходе делает приложения отзывчивыми и надёжными.]]></description><link>материалы/подтемы/секция-2.-react/тема-№19/асинхронность-и-react.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №19/Асинхронность и React.md</guid><pubDate>Wed, 04 Feb 2026 06:08:28 GMT</pubDate></item><item><title><![CDATA[Разница между await и then()]]></title><description><![CDATA[await и .then() — это два способа работы с промисами, но они отличаются по стилю, читаемости и поведению.С .then() код строится в виде цепочки:fetchData() .then(data =&gt; processData(data)) .then(result =&gt; saveResult(result)) .catch(error =&gt; console.error(error));
+С await код выглядит как последовательный синхронный:try { const data = await fetchData(); const result = processData(data); await saveResult(result);
+} catch (error) { console.error(error);
+}
+Второй вариант легче читать, особенно при наличии условий, циклов или нескольких переменных.При использовании .then() каждое значение доступно только внутри соответствующего колбэка. Чтобы использовать результат на следующем шаге, нужно возвращать его явно:fetchUser() .then(user =&gt; { return fetchPosts(user.id); // без return — undefined }) .then(posts =&gt; console.log(posts));
+С await значения сохраняются в обычные переменные и доступны на любом этапе функции:const user = await fetchUser();
+const posts = await fetchPosts(user.id);
+console.log(posts);
+С .then() ошибку ловит отдельный .catch() в конце цепочки. Если ошибка возникает в любом .then(), она передаётся дальше до .catch().С await используется стандартный try/catch, что позволяет обрабатывать ошибки точно так же, как в синхронном коде, и даже применять разные блоки catch для разных участков.Функция с .then() требует аккуратного возврата промиса, чтобы результат был доступен снаружи:function getUserData() { return fetchUser().then(user =&gt; { return { ...user, loadedAt: Date.now() }; });
+}
+С async/await возврат происходит естественно:async function getUserData() { const user = await fetchUser(); return { ...user, loadedAt: Date.now() };
+}
+Обе функции возвращают промис, но второй вариант проще понять.
+При работе с параллельными операциями на верхнем уровне:
+Promise.all([a(), b()]).then(([resA, resB]) =&gt; { ... }); В обработчиках событий, где неудобно создавать отдельную async-функцию:
+button.addEventListener('click', () =&gt; fetchData().then(showData)); Однако даже в этих случаях можно использовать стрелочную async-функцию.Используйте async/await по умолчанию. Он делает код линейным, упрощает отладку и совместим со всеми возможностями JavaScript. Резервируйте .then() только для специфических случаев, где он действительно короче или удобнее.]]></description><link>материалы/подтемы/секция-2.-react/тема-№19/разница-между-await-и-then().html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №19/Разница между await и then().md</guid><pubDate>Wed, 04 Feb 2026 06:03:30 GMT</pubDate></item><item><title><![CDATA[Async и await]]></title><description><![CDATA[async/await — это синтаксический сахар над промисами, который позволяет писать асинхронный код так, будто он синхронный. Он делает код проще для чтения и отладки, сохраняя при этом все преимущества промисов.Функция, содержащая await, должна быть помечена ключевым словом async. Такая функция всегда возвращает промис:async function fetchData() { const response = await fetch('https://api.example.com/data'); const data = await response.json(); return data; // эквивалентно resolve(data)
+}
+Вызов этой функции:fetchData().then(data =&gt; console.log(data));
+Или внутри другой async-функции:async function handleData() { const data = await fetchData(); console.log(data);
+}
+Ключевое слово await приостанавливает выполнение только внутри текущей async-функции, пока промис не завершится. При этом основной поток выполнения не блокируется — другие задачи продолжают работать.async function example() { console.log('Начало'); await new Promise(resolve =&gt; setTimeout(resolve, 1000)); console.log('Прошла секунда');
+}
+Вывод:Начало
+(через 1 секунду) Прошла секунда
+Ошибки в async/await обрабатываются с помощью стандартного try/catch:async function safeFetch() { try { const response = await fetch('https://api.example.com/data'); if (!response.ok) throw new Error('Сервер вернул ошибку'); const data = await response.json(); return data; } catch (error) { console.error('Не удалось загрузить данные:', error.message); throw error; // можно пробросить дальше, если нужно }
+}
+Это гораздо удобнее, чем .catch() в цепочках промисов, особенно при сложной логике.
+await можно использовать только внутри функций, объявленных как async
+Нельзя использовать await на верхнем уровне модуля (вне функции), если только не используется top-level await (поддержка зависит от окружения; в React Native — не рекомендуется)
+async-функция всегда возвращает промис, даже если в ней нет await
+Последовательно (медленно):async function loadSequentially() { const user = await fetchUser(); const posts = await fetchPosts(user.id); return { user, posts };
+}
+Параллельно (быстро):async function loadInParallel() { const userPromise = fetchUser(); const postsPromise = fetchPosts(); // предположим, что ID не нужен сразу const user = await userPromise; const posts = await postsPromise; return { user, posts };
+}
+Или с Promise.all:async function loadWithAll() { const [user, posts] = await Promise.all([fetchUser(), fetchPosts()]); return { user, posts };
+}
+Используйте async/await в большинстве случаев — он проще, читаемее и лучше сочетается с обычными конструкциями языка (if, for, try/catch). Избегайте смешивания .then() и await в одном блоке кода без веской причины.]]></description><link>материалы/подтемы/секция-2.-react/тема-№19/async-и-await.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №19/Async и await.md</guid><pubDate>Wed, 04 Feb 2026 05:58:49 GMT</pubDate></item><item><title><![CDATA[Промисы (Promise)]]></title><description><![CDATA[Промис (Promise) — это встроенный в JavaScript объект, который представляет результат асинхронной операции, которая может завершиться успешно или с ошибкой. Промисы были созданы для решения проблем коллбэков и обеспечения более читаемого и управляемого асинхронного кода.Любой промис может находиться в одном из трёх состояний:
+pending — начальное состояние, операция ещё не завершена
+fulfilled — операция завершилась успешно, значение доступно
+rejected — операция завершилась с ошибкой, причина ошибки доступна
+Состояние промиса меняется только один раз: из pending либо в fulfilled, либо в rejected. После этого оно остаётся неизменным.Промис создаётся с помощью конструктора new Promise(), которому передаётся функция-исполнитель (executor):const myPromise = new Promise((resolve, reject) =&gt; { // Имитация асинхронной операции setTimeout(() =&gt; { const success = true; if (success) { resolve('Данные получены'); } else { reject(new Error('Не удалось получить данные')); } }, 1000);
+});
+Функция получает два параметра:
+resolve(value) — вызывается при успешном завершении
+reject(error) — вызывается при ошибке
+Для работы с результатом промиса используются методы:Вызывается, если промис выполнен успешно:myPromise.then((result) =&gt; { console.log(result); // 'Данные получены'
+});
+Вызывается, если промис отклонён:myPromise.catch((error) =&gt; { console.error(error.message); // 'Не удалось получить данные'
+});
+Вызывается в любом случае — как при успехе, так и при ошибке. Часто используется для очистки (например, скрыть индикатор загрузки):myPromise .then(console.log) .catch(console.error) .finally(() =&gt; console.log('Операция завершена'));
+Метод .then() возвращает новый промис, что позволяет строить цепочки:fetchUserData() .then(user =&gt; fetchUserPosts(user.id)) .then(posts =&gt; processPosts(posts)) .then(result =&gt; console.log(result)) .catch(error =&gt; console.error('Ошибка:', error));
+Каждый шаг может возвращать значение или другой промис. Если в цепочке возникает ошибка, выполнение переходит к ближайшему .catch().
+Код становится линейным и читаемым
+Ошибки обрабатываются централизованно через .catch()
+Легко комбинировать несколько асинхронных операций
+Избегается «ад коллбэков» Промисы не отменяются после создания
+Нельзя узнать текущее состояние промиса напрямую (только через обработчики)
+Если не вызвать .catch(), ошибка может остаться незамеченной (в современных средах такие ошибки логируются в консоль)
+Промисы стали стандартом для асинхронных операций в JavaScript и лежат в основе более современного синтаксиса async/await.]]></description><link>материалы/подтемы/секция-2.-react/тема-№19/промисы-(promise).html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №19/Промисы (Promise).md</guid><pubDate>Wed, 04 Feb 2026 05:54:03 GMT</pubDate></item><item><title><![CDATA[Коллбэки]]></title><description><![CDATA[Коллбэк (callback) — это функция, передаваемая в другую функцию как аргумент и вызываемая позже, когда завершится какая-то операция. Коллбэки были первым способом обработки асинхронных операций в JavaScript.Функция, принимающая коллбэк, вызывает его в нужный момент — например, после получения данных или истечения таймера. Это позволяет «подписаться» на завершение операции.function fetchData(callback) { setTimeout(() =&gt; { const data = { id: 1, name: 'Пример' }; callback(data); }, 1000);
+} fetchData((result) =&gt; { console.log('Получены данные:', result);
+});
+Здесь fetchData имитирует задержку, а затем вызывает переданный коллбэк с данными.Когда нужно выполнить несколько асинхронных операций последовательно, код быстро становится вложенным и трудночитаемым:getData((a) =&gt; { getMoreData(a, (b) =&gt; { getEvenMoreData(b, (c) =&gt; { getFinalData(c, (d) =&gt; { console.log(d); }); }); });
+});
+Такой стиль усложняет понимание логики, отладку и рефакторинг.В коллбэках нет единого механизма обработки ошибок. Часто используется соглашение: первый аргумент — ошибка, второй — данные:fs.readFile('file.txt', (err, data) =&gt; { if (err) { console.error('Ошибка:', err); return; } console.log(data);
+});
+Но если забыть проверить err, ошибка может остаться незамеченной.Код перестаёт читаться сверху вниз. Вместо последовательных шагов появляются вложенные блоки, что затрудняет восприятие потока выполнения.Несмотря на недостатки, коллбэки всё ещё применяются:
+В событиях: button.addEventListener('click', handler)
+В некоторых API React Native (например, обратные вызовы в нативных модулях)
+В устаревших библиотеках
+Однако для новых проектов рекомендуется использовать промисы или async/await.]]></description><link>материалы/подтемы/секция-2.-react/тема-№19/коллбэки.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №19/Коллбэки.md</guid><pubDate>Wed, 04 Feb 2026 05:49:17 GMT</pubDate></item><item><title><![CDATA[Что такое асинхронность]]></title><description><![CDATA[Асинхронность — это способ выполнения кода, при котором длительные операции (например, запрос к серверу или таймер) не останавливают выполнение остальной программы. В JavaScript основной поток выполнения единственный, поэтому без асинхронности интерфейс «зависал» бы при каждой задержке.Если бы JavaScript был полностью синхронным, то при выполнении операции вроде fetch() весь интерфейс перестал бы отвечать, пока не пришёл ответ. Асинхронность позволяет продолжать взаимодействие с приложением: пользователь может кликать, скроллить и вводить данные, даже если фоновая задача ещё не завершена.
+Запросы к API через fetch или axios
+Чтение или запись в файловую систему (в средах, где это доступно)
+Таймеры: setTimeout, setInterval
+События: клики, ввод текста, загрузка изображений
+JavaScript использует событийную петлю (event loop). Когда встречается асинхронная операция, она передаётся в браузерное API или среду выполнения (например, Node.js или React Native), а основной поток продолжает работу. Как только операция завершается, её результат помещается в очередь задач, и движок обрабатывает его, когда основной стек вызовов свободен.Это означает, что асинхронный код не выполняется параллельно, но он не блокирует выполнение других инструкций.console.log('Начало'); setTimeout(() =&gt; { console.log('Таймер сработал');
+}, 1000); console.log('Конец');
+Вывод:Начало
+Конец
+Таймер сработал
+Строка 'Таймер сработал' появляется последней, потому что setTimeout — асинхронная функция. Она не ждёт, пока пройдёт секунда, а сразу возвращает управление, позволяя выполниться следующей строке.]]></description><link>материалы/подтемы/секция-2.-react/тема-№19/что-такое-асинхронность.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №19/Что такое асинхронность.md</guid><pubDate>Wed, 04 Feb 2026 05:47:07 GMT</pubDate></item><item><title><![CDATA[Тема №15. Хранение и передача данных в React]]></title><description><![CDATA[В этой теме вы изучите механизмы управления состоянием и передачи данных между компонентами в React — основу для построения интерактивных интерфейсов. Поймёте, как хранить данные внутри компонента с помощью хуков, как передавать их через свойства и как сохранять их между сессиями — что критично для обеспечения постоянства пользовательских настроек и кэширования информации.
 <a data-href="Состояние и хук useState" href="материалы/подтемы/секция-2.-react/тема-№15/состояние-и-хук-usestate.html" class="internal-link" target="_self" rel="noopener nofollow">Состояние и хук useState</a>
 <br><a data-href="Передача данных через props" href="материалы/подтемы/секция-2.-react/тема-№15/передача-данных-через-props.html" class="internal-link" target="_self" rel="noopener nofollow">Передача данных через props</a>
 <br><a data-href="Хранение данных между сессиями" href="материалы/подтемы/секция-2.-react/тема-№15/хранение-данных-между-сессиями.html" class="internal-link" target="_self" rel="noopener nofollow">Хранение данных между сессиями</a>
