@@ -1,4 +1,187 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MobileDevTisbi]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>MobileDevTisbi</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 07 Feb 2026 10:12:26 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 07 Feb 2026 10:12:24 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Практика №11. Игра-кликер]]></title><description><![CDATA[Разработать одностраничное веб-приложение «Кликер».
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MobileDevTisbi]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>MobileDevTisbi</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 11 Mar 2026 09:04:47 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 11 Mar 2026 09:04:42 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Практика №12. Социальная сеть - Часть 1. Верстка]]></title><description><![CDATA[Разработать одностраничное веб-приложение (SPA) на React с использованием Vite и JavaScript, имитирующее базовую социальную сеть. Все данные - статические (mock), без подключения к бэкенду. Структура проекта должна соответствовать стандартной архитектуре React + Vite. Репозиторий на GitHub должен называться: Group_LastName_task-12.
+Заготовка проекта react-project.
+(Материалы/Заготовки под практики/react-project.zip)
+Для проектирования диаграмм: <a rel="noopener nofollow" class="external-link is-unresolved" href="https://mermaid.live" target="_self">https://mermaid.live</a>
+<br>Для создания дизайна: <a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.figma.com" target="_self">https://www.figma.com</a>
+Примеры данных:
+(`Материалы/Заготовки под практики/task_12-13_data_example.json)
+Трилогия задания включает в себя разработку фронта упрощенной социальной сети используя React. В рамках этой части необходимо продумать и реализовать структуру сайта используя react-router-dom, ванильный JavaScript и React. Внешних подключений (в т.ч. к бэкэнду и БД) не предусмотрено, вместо этого необходимо использовать заготовленные заранее данные из JSON файлов (см. ресурсы/примеры данных). Дизайн, название и структуру сайта необходимо придумать самостоятельно, ниже будет пример.Написать хуки и набор утилит для реализации следующей функциональности для ролей:
+Просматривать список постов с главной страницы;
+Просматривать страницу любого пользователя;
+Просматривать список постов от конкретного пользователя (в рамках страницы пользователя);
+Просматривать список друзей пользователя;
+Просматривать посты (в т.ч. количество лайков, список комментариев и их общее количество).
+Искать пользователей по имени и никнейму;
+Авторизоваться (без регистрации!). Редактировать свой профиль (фотографию, описание);
+Создавать новые посты и редактировать свои старые;
+Писать комментарии под постами;
+Лайкать посты;
+Удалять свои комментарии;
+Удалять комментарии под своими постами;
+Удалять свои посты;
+Отправлять новые заявки в друзья;
+Принимать и отклонять заявки от других пользователей;
+Выходить из своего профиля.
+На стороне "предположительного" бэкенда данные хранятся в следующем виде:
+Необходимо использовать данные из предоставленного JSON (их можно редактировать) с учётом того что настоящий бэкенд может предоставлять другие эндпоинты.
+Веб-приложение не должно менять данные внутри JSON, "обновление" данных, например добавление лайка, должно происходить только в рамках компонента.
+Авторизация в будущем будет реализовано при помощи бэкэнда, поэтому проверки пароля не должно быть. Сессия должна храниться в браузере при помощи cookie файлов.
+Все мутированные данные и состояния, кроме изменения темы, должны сбрасываться при перезагрузке страницы
+Навигация между страницами осуществляется без перезагрузки страницы при помощи react-router-dom
+Запрещено использовать внешние библиотеки и API кроме тех которые предоставлены в заготовленном проекте. Ресурсы, такие как: изображения, шрифты, аудио - должны быть доступны при офлайн запуске (находится в папке public)
+Запрещено использовать глобальные переменные вне компонентов.
+UX/UI должен быть удобным и визуально качественно проработаны (использовать css)
+Структура проекта должна находится в разделенных файлах и в соответствующих директориях (все компоненты в одном файле нельзя!)
+При реализации должна быть история коммитов
+Необходимо добавить страницы вроде 404 Предоставление Figma макета сайта
+Реализовать переключение темы (светлая/тёмная) в разделе «Настройки». Тема применяется ко всему приложению и сохраняется между перезагрузками страницы. Должны быть видны чёткие визуальные различия между темами (цвет фона, текста, карточек).
+5 практические сессии После сессии 1 дедлайн: 75% от максимального балла После сессии 2: 50% После сессии 3: 25%
+После сессии 3: 25%
+]]></description><link>задания/секция-2.-react/практика-№12.-социальная-сеть-часть-1.-верстка.html</link><guid isPermaLink="false">Задания/Секция 2. React/Практика №12. Социальная сеть - Часть 1. Верстка.md</guid><pubDate>Wed, 11 Mar 2026 08:11:22 GMT</pubDate></item><item><title><![CDATA[task_12-13_data_example]]></title><link>материалы/заготовки-под-практики/task_12-13_data_example.html</link><guid isPermaLink="false">Материалы/Заготовки под практики/task_12-13_data_example.json</guid><pubDate>Wed, 11 Mar 2026 07:42:07 GMT</pubDate></item><item><title><![CDATA[Типизация событий в React]]></title><description><![CDATA[Типизация событий в React позволяет точно описывать объект события (event), который передаётся в обработчики. Это даёт доступ к правильным свойствам (например, e.target.value) и предотвращает ошибки при работе с формами, кликами и другими взаимодействиями.Все события в React обёрнуты в синтетические объекты, предоставляемые библиотекой. Их типы находятся в пространстве имён React. Пример:function handleChange(e: React.ChangeEvent&lt;HTMLInputElement&gt;) { console.log(e.target.value);
+}
+Здесь React.ChangeEvent&lt;HTMLInputElement&gt; говорит TypeScript, что:
+событие — это изменение значения (change),
+цель события — HTML-элемент типа &lt;input&gt;,
+у e.target есть свойство value. React.ChangeEvent&lt;HTMLInputElement&gt; — для полей ввода.
+React.FormEvent&lt;HTMLFormElement&gt; — для отправки формы.
+React.MouseEvent&lt;HTMLButtonElement&gt; — для кликов по кнопке.
+React.KeyboardEvent&lt;HTMLInputElement&gt; — для нажатий клавиш в поле ввода.
+Пример обработчика клика:function handleClick(e: React.MouseEvent&lt;HTMLButtonElement&gt;) { e.preventDefault(); console.log('Кнопка нажата');
+}
+Если использовать общий тип any или не указывать тип вообще, IDE не сможет предложить автодополнение, а TypeScript не защитит от обращения к несуществующим свойствам:// Плохо:
+function badHandler(e) { console.log(e.target.valu); // опечатка — ошибка не будет найдена
+} // Хорошо:
+function goodHandler(e: React.ChangeEvent&lt;HTMLInputElement&gt;) { console.log(e.target.valu); // ошибка на этапе компиляции
+}
+Если обработчик используется в нескольких местах, можно вынести тип:type InputChangeHandler = (e: React.ChangeEvent&lt;HTMLInputElement&gt;) =&gt; void; const handleChange: InputChangeHandler = (e) =&gt; { setValue(e.target.value);
+};
+Это особенно полезно в больших компонентах или при написании кастомных хуков.]]></description><link>материалы/подтемы/секция-2.-react/тема-№22/типизация-событий-в-react.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №22/Типизация событий в React.md</guid><pubDate>Thu, 19 Feb 2026 16:09:30 GMT</pubDate></item><item><title><![CDATA[Тема №22. Типизация в React с TypeScript]]></title><description><![CDATA[В этой теме вы научитесь применять TypeScript в React-проектах — типизировать компоненты, пропсы, состояние и хуки. Поймёте, как типы помогают избежать ошибок при передаче данных между компонентами, и как использовать типизацию для повышения надёжности интерфейса в мобильных приложениях на React Native.
+<a data-href="Типизация props в React" href="материалы/подтемы/секция-2.-react/тема-№22/типизация-props-в-react.html" class="internal-link" target="_self" rel="noopener nofollow">Типизация props в React</a>
+<br><a data-href="Типизация состояния (useState) в TypeScript" href="материалы/подтемы/секция-2.-react/тема-№22/типизация-состояния-(usestate)-в-typescript.html" class="internal-link" target="_self" rel="noopener nofollow">Типизация состояния (useState) в TypeScript</a>
+<br><a data-href="Типизация хуков в React" href="материалы/подтемы/секция-2.-react/тема-№22/типизация-хуков-в-react.html" class="internal-link" target="_self" rel="noopener nofollow">Типизация хуков в React</a>
+<br><a data-href="Типизация событий в React" href="материалы/подтемы/секция-2.-react/тема-№22/типизация-событий-в-react.html" class="internal-link" target="_self" rel="noopener nofollow">Типизация событий в React</a>
+(пусто)<br><a data-href="Тема №23. Запросы к API в TypeScript" href=".html" class="internal-link" target="_self" rel="noopener nofollow">Тема №23. Запросы к API в TypeScript</a>]]></description><link>лекции/секция-2.-react/тема-№22.-типизация-в-react-с-typescript.html</link><guid isPermaLink="false">Лекции/Секция 2. React/Тема №22. Типизация в React с TypeScript.md</guid><pubDate>Thu, 19 Feb 2026 16:06:39 GMT</pubDate></item><item><title><![CDATA[Типизация хуков в React]]></title><description><![CDATA[Типизация хуков в React с TypeScript позволяет точно описывать данные, с которыми работают useRef, useContext и другие встроенные хуки. Это повышает надёжность кода и упрощает его поддержку.Хук useRef принимает generic-параметр, указывающий тип значения, хранящегося в .current:const inputRef = useRef&lt;HTMLInputElement&gt;(null);
+Теперь при обращении к inputRef.current доступны только методы и свойства HTMLInputElement. Например:inputRef.current?.focus(); // TypeScript знает, что focus существует
+Если не указать тип, .current будет иметь тип any | null, и проверки типов не будет.Для хранения обычных значений (не DOM-элементов) указывается нужный тип:const renderCount = useRef&lt;number&gt;(0);
+renderCount.current += 1;
+При использовании контекста необходимо указать тип значения, которое передаётся через Provider:interface Theme { primary: string; background: string;
+} const ThemeContext = createContext&lt;Theme | null&gt;(null); // В компоненте:
+const theme = useContext(ThemeContext); // тип Theme | null
+Если не указать тип при создании контекста, TypeScript не сможет проверить корректность использования значений из контекста.
+Примечание: если контекст всегда инициализирован (например, через createContext с дефолтным значением), можно не использовать | null.
+Сам useEffect не требует явной типизации — он работает с функцией без возвращаемого значения. Однако зависимости (deps) должны соответствовать реальным используемым переменным. TypeScript не проверяет содержимое массива зависимостей напрямую, но поскольку все переменные внутри эффекта уже имеют строгие типы (из useState, props и т.д.), это обеспечивает косвенную безопасность.Все хуки, которые хранят или передают данные, должны иметь явно указанный тип. Это гарантирует:
+корректную работу с DOM-элементами,
+защиту от обращения к несуществующим свойствам,
+чёткое понимание структуры данных при чтении кода.
+]]></description><link>материалы/подтемы/секция-2.-react/тема-№22/типизация-хуков-в-react.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №22/Типизация хуков в React.md</guid><pubDate>Thu, 19 Feb 2026 16:02:00 GMT</pubDate></item><item><title><![CDATA[Типизация состояния (useState) в TypeScript]]></title><description><![CDATA[Типизация состояния в React с помощью хука useState позволяет явно указать, какие значения может принимать переменная состояния. Это предотвращает ошибки при присвоении несовместимых типов и улучшает читаемость кода.Хук useState — обобщённая (generic) функция. Тип состояния указывается в угловых скобках:const [count, setCount] = useState&lt;number&gt;(0);
+Здесь TypeScript знает, что count всегда будет числом, а setCount принимает только число.Если начальное значение не позволяет однозначно определить тип (например, null), тип нужно указывать явно:const [user, setUser] = useState&lt;User | null&gt;(null);
+Без явного указания TypeScript выведет тип как null, и позже нельзя будет присвоить объект типа User.Часто состояние может иметь несколько допустимых форм. Например, данные могут быть либо загружены, либо ещё нет:type LoadingState = 'idle' | 'loading' | 'success' | 'error'; const [status, setStatus] = useState&lt;LoadingState&gt;('idle');
+Такой подход делает логику компонента более предсказуемой и защищённой от случайных значений.Для сложных структур также требуется явное указание:interface Todo { id: string; text: string; completed: boolean;
+} const [todos, setTodos] = useState&lt;Todo[]&gt;([]);
+Если не указать тип, TypeScript может вывести его как never[], и добавление элементов вызовет ошибку.Если передать начальное значение с чётким типом, дополнительная аннотация не нужна:const [name, setName] = useState(''); // тип string выводится автоматически
+Однако при работе с React Native и особенно в крупных проектах рекомендуется указывать тип явно — это упрощает поддержку и рефакторинг.]]></description><link>материалы/подтемы/секция-2.-react/тема-№22/типизация-состояния-(usestate)-в-typescript.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №22/Типизация состояния (useState) в TypeScript.md</guid><pubDate>Thu, 19 Feb 2026 15:58:02 GMT</pubDate></item><item><title><![CDATA[Типизация props в React]]></title><description><![CDATA[Типизация props — это основа безопасной передачи данных между компонентами в React при использовании TypeScript. Она позволяет явно описать, какие данные ожидает компонент, и предотвращает ошибки на этапе разработки.Для описания структуры пропсов используется interface. Это особенно удобно, когда компонент принимает объект с несколькими полями:interface ButtonProps { title: string; onClick: () =&gt; void;
+}
+Здесь компонент ожидает строку title и функцию onClick, которая ничего не возвращает.После объявления интерфейса его нужно указать в параметрах функционального компонента:function Button({ title, onClick }: ButtonProps) { return &lt;button onClick={onClick}&gt;{title}&lt;/button&gt;;
+}
+Если пропс может отсутствовать, его помечают знаком вопроса:interface ButtonProps { title: string; onClick: () =&gt; void; disabled?: boolean;
+}
+Теперь disabled можно не передавать. При использовании внутри компонента TypeScript будет считать его типом boolean | undefined.Можно задать значение по умолчанию прямо в деструктуризации:function Button({ title, onClick, disabled = false }: ButtonProps) { return ( &lt;button disabled={disabled} onPress={onClick}&gt; {title} &lt;/button&gt; );
+}
+TypeScript корректно поймёт, что внутри функции disabled имеет тип boolean, даже если он был опциональным в интерфейсе.
+Не используйте any для обхода типизации — это сводит на нет все преимущества TypeScript.
+]]></description><link>материалы/подтемы/секция-2.-react/тема-№22/типизация-props-в-react.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №22/Типизация props в React.md</guid><pubDate>Thu, 19 Feb 2026 15:55:20 GMT</pubDate></item><item><title><![CDATA[Обобщённые типы (Generics)]]></title><description><![CDATA[Обобщённые типы (generics) в TypeScript позволяют писать переиспользуемый и типобезопасный код, не привязываясь к конкретному типу данных. Они особенно полезны при работе с функциями, коллекциями и компонентами, которые должны работать с разными типами, сохраняя при этом точность типизации.Рассмотрим функцию, которая возвращает переданное ей значение:function identity(arg: any): any { return arg;
+}
+Такая функция компилируется, но теряет информацию о типе. Если передать строку, TypeScript не сможет гарантировать, что на выходе тоже строка — только any.Это нарушает принцип типовой безопасности.Generics решают эту проблему, позволяя «захватывать» тип аргумента и использовать его в аннотации возвращаемого значения.function identity&lt;T&gt;(arg: T): T { return arg;
+}
+Здесь &lt;T&gt; — это параметр типа. Он работает как переменная для типа. При вызове функции TypeScript выводит T автоматически:const output = identity("привет"); // T выведено как string
+// output имеет тип string
+Можно также указать тип явно:const output = identity&lt;string&gt;("привет");
+Часто generics используются при работе с коллекциями. Например, функция, возвращающая длину массива:function getLength&lt;T&gt;(items: T[]): number { return items.length;
+} const numbers = [1, 2, 3];
+const count = getLength(numbers); // T = number, items: number[]
+Функция работает с любым массивом, но сохраняет знание о том, какие элементы в нём лежат (даже если сама их не использует).Иногда нужно гарантировать, что generic-тип имеет определённые свойства. Для этого используется ограничение через extends.interface HasLength { length: number;
+} function logLength&lt;T extends HasLength&gt;(arg: T): T { console.log(arg.length); return arg;
+} logLength("текст"); // OK: у строки есть length
+logLength([1, 2, 3]); // OK: у массива есть length
+// logLength(42); // Ошибка: число не имеет length
+Это позволяет безопасно использовать свойства внутри функции.Generics можно использовать не только в функциях, но и в определении типов:type ApiResponse&lt;T&gt; = { data: T; status: number;
+}; interface Repository&lt;T&gt; { save(item: T): void; findById(id: string): T | null;
+}
+Пример использования:const userResponse: ApiResponse&lt;User&gt; = { data: { name: "Иван", email: "ivan@example.com" }, status: 200
+};
+Функция или тип может принимать несколько generic-параметров:function pair&lt;A, B&gt;(a: A, b: B): [A, B] { return [a, b];
+} const result = pair("имя", 25); // тип: [string, number]
+Порядок и имена параметров (A, B, T, U и т.д.) выбираются по смыслу или соглашению.]]></description><link>материалы/подтемы/секция-2.-react/тема-№21/обобщённые-типы-(generics).html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №21/Обобщённые типы (Generics).md</guid><pubDate>Thu, 19 Feb 2026 14:10:44 GMT</pubDate></item><item><title><![CDATA[Тема №21. Типизация структур данных в TypeScript]]></title><description><![CDATA[В этой теме вы изучите, как описывать сложные структуры данных — объекты, массивы, функции — с помощью типов в TypeScript. Поймёте, как определять интерфейсы и типы, работать с коллекциями и использовать объединения и пересечения для точного описания допустимых значений. Это необходимо для корректной работы с API, пропсами и состоянием в React-приложениях.
+<a data-href="Типизация объектов" href="материалы/подтемы/секция-2.-react/тема-№21/типизация-объектов.html" class="internal-link" target="_self" rel="noopener nofollow">Типизация объектов</a>
+<br><a data-href="Типизация массивов" href="материалы/подтемы/секция-2.-react/тема-№21/типизация-массивов.html" class="internal-link" target="_self" rel="noopener nofollow">Типизация массивов</a>
+<br><a data-href="Типизация функций" href="материалы/подтемы/секция-2.-react/тема-№21/типизация-функций.html" class="internal-link" target="_self" rel="noopener nofollow">Типизация функций</a>
+<br><a data-href="Объединения и пересечения типов" href="материалы/подтемы/секция-2.-react/тема-№21/объединения-и-пересечения-типов.html" class="internal-link" target="_self" rel="noopener nofollow">Объединения и пересечения типов</a>
+<br><a data-href="Обобщённые типы (Generics)" href="материалы/подтемы/секция-2.-react/тема-№21/обобщённые-типы-(generics).html" class="internal-link" target="_self" rel="noopener nofollow">Обобщённые типы (Generics)</a>
+(пусто)<br><a data-href="Тема №22. Типизация в React с TypeScript" href="лекции/секция-2.-react/тема-№22.-типизация-в-react-с-typescript.html" class="internal-link" target="_self" rel="noopener nofollow">Тема №22. Типизация в React с TypeScript</a>]]></description><link>лекции/секция-2.-react/тема-№21.-типизация-структур-данных-в-typescript.html</link><guid isPermaLink="false">Лекции/Секция 2. React/Тема №21. Типизация структур данных в TypeScript.md</guid><pubDate>Thu, 19 Feb 2026 14:07:44 GMT</pubDate></item><item><title><![CDATA[Объединения и пересечения типов]]></title><description><![CDATA[Объединения и пересечения — это мощные инструменты TypeScript для комбинирования типов. Они позволяют точно описывать данные, которые могут принимать несколько форм или объединять свойства из разных источников.Объединение (union) означает, что значение может соответствовать одному из нескольких типов. Обозначается вертикальной чертой |.type ID = string | number; function printId(id: ID): void { console.log(`ID: ${id}`);
+} printId("user_123"); // строка — допустимо
+printId(42); // число — допустимо
+Часто объединения используются с литералами для ограничения допустимых значений:type Status = "active" | "inactive" | "pending"; function updateStatus(status: Status): void { // ...
+} updateStatus("active"); // OK
+updateStatus("deleted"); // Ошибка: не входит в union
+Такие типы делают код самодокументируемым и предотвращают ошибки при передаче недопустимых значений.Пересечение (intersection) создаёт тип, который объединяет все свойства из нескольких типов. Значение должно соответствовать всем указанным типам одновременно.interface User { name: string; email: string;
+} interface Admin { role: string; permissions: string[];
+} type AdminUser = User &amp; Admin; const admin: AdminUser = { name: "Алексей", email: "alex@example.com", role: "editor", permissions: ["read", "write"]
+};
+Пересечение особенно полезно при композиции пропсов в React-компонентах или при расширении базовых типов без наследования.Интерфейсы можно расширять через extends, но это работает только с другими интерфейсами. Пересечение работает с любыми типами — interface, type, примитивами и даже объединениями.type BaseProps = { className?: string };
+type ButtonVariant = { variant: "primary" | "secondary" }; type ButtonProps = BaseProps &amp; ButtonVariant;
+Это гибче, чем interface, особенно когда исходные типы определены как type.При работе с объединениями TypeScript требует убедиться, что операция допустима для всех возможных вариантов. Часто используется проверка типа через typeof или сравнение со строковыми литералами.function processValue(value: string | number): void { if (typeof value === "string") { console.log(value.toUpperCase()); } else { console.log(value.toFixed(2)); }
+}
+Без такой проверки TypeScript не позволит вызывать методы, специфичные только для одного из типов в объединении.]]></description><link>материалы/подтемы/секция-2.-react/тема-№21/объединения-и-пересечения-типов.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №21/Объединения и пересечения типов.md</guid><pubDate>Thu, 19 Feb 2026 13:53:56 GMT</pubDate></item><item><title><![CDATA[Типизация функций]]></title><description><![CDATA[Типизация функций в TypeScript позволяет чётко определить, какие аргументы принимает функция и какое значение она возвращает. Это помогает избежать ошибок при вызове и упрощает поддержку кода.При объявлении функции после каждого параметра указывается его тип. После закрывающей скобки параметров — тип возвращаемого значения.function greet(name: string, age: number): string { return `Привет, ${name}! Тебе ${age} лет.`;
+}
+Если функция ничего не возвращает (например, только логирует данные), используется тип void:function logMessage(message: string): void { console.log(message);
+}
+Параметр можно сделать необязательным, добавив знак вопроса ? после его имени. Такой параметр может отсутствовать при вызове функции.function introduce(name: string, title?: string): string { if (title) { return `${name}, ${title}`; } return name;
+} introduce("Анна"); // допустимо
+introduce("Борис", "инженер"); // допустимо
+Важно: опциональные параметры должны идти после обязательных.TypeScript позволяет задавать значения по умолчанию для параметров. В этом случае аннотация типа часто не требуется — компилятор выводит его автоматически.function createGreeting(name: string, greeting: string = "Привет"): string { return `${greeting}, ${name}!`;
+}
+Несмотря на наличие значения по умолчанию, тип параметра всё равно должен соответствовать возможным вызовам. Если вы передадите значение другого типа, возникнет ошибка.
+Примечание: наличие значения по умолчанию делает параметр необязательным, даже без ?.
+Стрелочные функции типизируются аналогично, но аннотация часто выносится отдельно или указывается в месте присваивания.const multiply = (a: number, b: number): number =&gt; a * b; // Или с явным типом переменной:
+const divide: (x: number, y: number) =&gt; number = (x, y) =&gt; x / y;
+Последний вариант редко используется напрямую, но полезен при описании типов коллбэков или пропсов.Иногда нужно описать форму функции без её реализации — например, для типа пропса или обратного вызова.type EventHandler = (event: string, payload: unknown) =&gt; void; const handleEvent: EventHandler = (event, data) =&gt; { console.log(`Событие: ${event}`, data);
+};
+Это особенно важно в React, где обработчики событий и коллбэки должны иметь строго определённую сигнатуру.]]></description><link>материалы/подтемы/секция-2.-react/тема-№21/типизация-функций.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №21/Типизация функций.md</guid><pubDate>Thu, 19 Feb 2026 13:52:59 GMT</pubDate></item><item><title><![CDATA[Типизация массивов]]></title><description><![CDATA[Типизация массивов в TypeScript позволяет точно указать, какие значения могут находиться внутри коллекции. Это предотвращает ошибки при работе с данными и делает код более предсказуемым.Самый распространённый способ описания массива — добавить [] после типа элемента. Например, массив строк описывается как string[].const names: string[] = ["Анна", "Борис", "Вера"];
+const scores: number[] = [85, 92, 78];
+Этот синтаксис читается как «массив значений типа string».TypeScript также поддерживает обобщённую (generic) форму записи: Array&lt;T&gt;, где T — тип элемента.const names: Array&lt;string&gt; = ["Анна", "Борис", "Вера"];
+const scores: Array&lt;number&gt; = [85, 92, 78];
+Обе формы эквивалентны. Однако в сообществе React и TypeScript чаще используется T[], так как она короче и проще для восприятия.Кортеж — это массив фиксированной длины, где каждый элемент имеет строго определённый тип. В отличие от обычного массива, порядок и типы элементов важны.type UserTuple = [string, number]; const user: UserTuple = ["Иван", 30]; // правильно
+// const user2: UserTuple = [30, "Иван"]; // ошибка: типы не совпадают
+// const user3: UserTuple = ["Иван"]; // ошибка: недостаточно элементов
+Кортежи полезны, когда нужно вернуть из функции несколько значений разного типа или передать пару связанных данных.Хотя TypeScript не требует имён для элементов кортежа, их можно добавить в виде комментариев или использовать в современных версиях TS (4.0+) для лучшей документации:type UserData = [id: string, name: string, isActive: boolean]; const userData: UserData = ["u123", "Мария", true];
+Это не влияет на типизацию, но улучшает понимание кода.Часто массив содержит объекты. В этом случае тип элемента — это интерфейс или алиас типа.interface Product { id: string; title: string; price: number;
+} const products: Product[] = [ { id: "p1", title: "Ноутбук", price: 65000 }, { id: "p2", title: "Мышь", price: 1500 }
+];
+Такой подход обеспечивает безопасность при обращении к свойствам каждого элемента.]]></description><link>материалы/подтемы/секция-2.-react/тема-№21/типизация-массивов.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №21/Типизация массивов.md</guid><pubDate>Thu, 19 Feb 2026 13:49:40 GMT</pubDate></item><item><title><![CDATA[Типизация объектов]]></title><description><![CDATA[Типизация объектов в TypeScript позволяет точно описать форму данных, с которыми работает приложение. Это особенно важно при работе с данными от сервера, состоянием компонентов и пропсами.Простейший способ описать объект — использовать литерал типа прямо в аннотации. Указываются имена свойств и их типы через двоеточие.const user: { name: string; age: number } = { name: "Алексей", age: 25
+};
+Такой подход работает для разовых случаев, но имеет существенный недостаток — литерал нельзя переиспользовать. Если нужно описать несколько объектов с одинаковой структурой, приходится копировать одно и то же описание.Представьте, что в приложении нужно работать с несколькими пользователями. Каждый раз писать { name: string; age: number } неудобно и приводит к дублированию кода. Для решения этой проблемы в TypeScript существуют два механизма — interface и type.Ключевое слово interface создаёт именованный контракт, описывающий структуру объекта. Это наиболее распространённый способ типизации объектов в TypeScript.interface User { name: string; email: string; age: number;
+} const user1: User = { name: "Мария", email: "maria@example.com", age: 30
+}; const user2: User = { name: "Иван", email: "ivan@example.com", age: 28
+};
+Интерфейсы можно расширять с помощью ключевого слова extends. Это позволяет создавать новые интерфейсы на основе существующих, добавляя дополнительные свойства.interface User { name: string; email: string;
+} interface Admin extends User { role: string; permissions: string[];
+} const admin: Admin = { name: "Администратор", email: "admin@site.com", role: "superuser", permissions: ["read", "write", "delete"]
+};
+Ключевое слово type создаёт псевдоним для любого типа данных, не только для объектов. С его помощью можно описывать примитивы, объединения, кортежи и сложные структуры.type User = { name: string; email: string; age: number;
+}; const user: User = { name: "Елена", email: "elena@example.com", age: 22
+};
+Type может описывать не только объекты:type ID = string;
+type Status = "active" | "inactive";
+type Point = [number, number];
+Оба подхода позволяют описывать объекты, но есть рекомендации по выбору.Используйте interface, когда:
+Описываете форму объекта или класса
+Планируете расширять тип через наследование
+Работаете с пропсами компонентов в React
+Используйте type, когда:
+Нужно создать алиас для примитива или объединения типов
+Описываете кортежи или другие сложные типы
+Требуется выразить тип, который нельзя описать через интерфейс
+В большинстве случаев для описания объектов данных предпочтительнее interface, так как он был создан специально для этой цели и поддерживает расширение.]]></description><link>материалы/подтемы/секция-2.-react/тема-№21/типизация-объектов.html</link><guid isPermaLink="false">Материалы/Подтемы/Секция 2. React/Тема №21/Типизация объектов.md</guid><pubDate>Thu, 19 Feb 2026 13:41:31 GMT</pubDate></item><item><title><![CDATA[Практика №11. Игра-кликер]]></title><description><![CDATA[Разработать одностраничное веб-приложение «Кликер».
 Оно обязано быть сделано при помощи React (vite), следовать правильному неймингу и иметь правильную структуру.
 Приложение должно содержать игровое поле с персонажем, систему сбора монет, магазин улучшений и сохранение прогресса между сессиями. Репозиторий на GitHub должен называться: Group_LastName_task-11.<img alt="Pasted image 20260207130627.png" src="материалы/файлы/pasted-image-20260207130627.png" target="_self">Рекомендуется использовать заготовку из ресурсов.Заготовка проекта react-project.
 (Материалы/Заготовки под практики/react-project.zip)
