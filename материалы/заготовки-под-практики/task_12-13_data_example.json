@@ -1,0 +1,169 @@
+{
+  "users": [
+    {
+      "username": "alex_dev",
+      "display_name": "Александр Иванов",
+      "photo_url": "https://example.com/photos/alex_dev.jpg",
+      "bio": "Студент Колледжа ТИСБИ. Увлекаюсь разработкой мобильных приложений на React Native и Flutter. Люблю кофе и дождливые вечера."
+    },
+    {
+      "username": "maria_js",
+      "display_name": "Мария Петрова",
+      "photo_url": "",
+      "bio": "Frontend-разработчик. JavaScript, TypeScript, Vue.js. Выпускница ТИСБИ. В свободное время читаю про UX/UI и рисую интерфейсы."
+    },
+    {
+      "username": "dmitry_py",
+      "display_name": "Дмитрий Смирнов",
+      "photo_url": "https://example.com/photos/dmitry.png",
+      "bio": ""
+    },
+    {
+      "username": "anna_data",
+      "display_name": "Анна Козлова",
+      "photo_url": "https://example.com/photos/anna_k.jpg",
+      "bio": "Data Science и Python. Учусь в ТИСБИ на направлении «Программирование». Обожаю анализировать данные и строить графики."
+    },
+    {
+      "username": "igor_mobile",
+      "display_name": "Игорь Новиков",
+      "photo_url": "",
+      "bio": "Разрабатываю мобильные приложения под Android. Kotlin и немного Java. Иногда пишу на Python для автоматизации."
+    },
+    {
+      "username": "elena_web",
+      "display_name": "Елена Васильева",
+      "photo_url": "https://example.com/photos/elena_v.jpg",
+      "bio": "Fullstack-разработчик. JavaScript (Node.js + React). Преподаю волонтёрские курсы по вебу."
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "author": "alex_dev",
+      "content": "Только что закончил курс по разработке мобильных приложений в ТИСБИ! Теперь мой первый React Native проект — трекер привычек — доступен в тестовом режиме. Кто хочет попробовать?",
+      "image_url": "https://example.com/posts/habit_tracker_preview.jpg",
+      "created_at": "2026-03-01T14:30:00Z",
+      "updated_at": "2026-03-01T14:30:00Z"
+    },
+    {
+      "id": 2,
+      "author": "maria_js",
+      "content": "Почему я перешла с Vue 2 на Vue 3? Composition API изменил мою жизнь. Делюсь своим опытом миграции большого проекта.",
+      "image_url": null,
+      "created_at": "2026-03-02T09:15:00Z",
+      "updated_at": "2026-03-02T10:20:00Z"
+    },
+    {
+      "id": 3,
+      "author": "dmitry_py",
+      "content": "Написал скрипт на Python, который автоматически парсит расписание занятий с сайта ТИСБИ и отправляет уведомления в Telegram. Кому нужно — пишите!",
+      "image_url": "https://example.com/posts/schedule_bot_demo.png",
+      "created_at": "2026-03-03T16:45:00Z",
+      "updated_at": "2026-03-03T16:45:00Z"
+    },
+    {
+      "id": 4,
+      "author": "anna_data",
+      "content": "Сегодня на паре по машинному обучению мы построили модель предсказания погоды на основе открытых данных. Получилось неидеально, но интересно!",
+      "image_url": null,
+      "created_at": "2026-03-04T12:00:00Z",
+      "updated_at": "2026-03-04T12:00:00Z"
+    },
+    {
+      "id": 5,
+      "author": "igor_mobile",
+      "content": "Сравниваю производительность Jetpack Compose и Flutter на одинаковом UI. Результаты удивили даже меня.",
+      "image_url": "https://example.com/posts/compose_vs_flutter_bench.jpg",
+      "created_at": "2026-03-05T18:20:00Z",
+      "updated_at": "2026-03-06T11:10:00Z"
+    },
+    {
+      "id": 6,
+      "author": "elena_web",
+      "content": "Как объяснить бабушке, что такое REST API? Мой новый пост для начинающих разработчиков — простыми словами о сложном.",
+      "image_url": null,
+      "created_at": "2026-03-07T08:50:00Z",
+      "updated_at": "2026-03-07T08:50:00Z"
+    },
+    {
+      "id": 7,
+      "author": "alex_dev",
+      "content": "Сегодня в столовой ТИСБИ был особенно вкусный борщ. И да, я всё ещё ищу команду для хакатона по мобильной разработке!",
+      "image_url": "https://example.com/posts/borsch_tisbi.jpg",
+      "created_at": "2026-03-08T13:25:00Z",
+      "updated_at": "2026-03-08T13:25:00Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "post_id": 1,
+      "author": "maria_js",
+      "content": "Круто! А поддерживает ли твой трекер экспорт в CSV?",
+      "created_at": "2026-03-01T15:10:00Z"
+    },
+    {
+      "id": 2,
+      "post_id": 1,
+      "author": "igor_mobile",
+      "content": "Да, хочу протестировать! Скинь ссылку.",
+      "created_at": "2026-03-01T16:05:00Z"
+    },
+    {
+      "id": 3,
+      "post_id": 2,
+      "author": "elena_web",
+      "content": "Согласна! Composition API гораздо чище для сложной логики.",
+      "created_at": "2026-03-02T09:45:00Z"
+    },
+    {
+      "id": 4,
+      "post_id": 3,
+      "author": "anna_data",
+      "content": "Отличная идея! А можно добавить поддержку Google Calendar?",
+      "created_at": "2026-03-03T17:30:00Z"
+    },
+    {
+      "id": 5,
+      "post_id": 5,
+      "author": "dmitry_py",
+      "content": "А какие метрики использовал? FPS, время запуска, потребление памяти?",
+      "created_at": "2026-03-05T19:00:00Z"
+    },
+    {
+      "id": 6,
+      "post_id": 6,
+      "author": "alex_dev",
+      "content": "Прочитал — очень понятно! Сохраню для будущих студентов.",
+      "created_at": "2026-03-07T10:15:00Z"
+    },
+    {
+      "id": 7,
+      "post_id": 7,
+      "author": "maria_js",
+      "content": "Борщ действительно был вкусный! И я в команде для хакатона :)",
+      "created_at": "2026-03-08T14:00:00Z"
+    }
+  ],
+  "likes": [
+    { "id": 1, "post_id": 1, "user_id": "maria_js" },
+    { "id": 2, "post_id": 1, "user_id": "igor_mobile" },
+    { "id": 3, "post_id": 1, "user_id": "elena_web" },
+    { "id": 4, "post_id": 2, "user_id": "alex_dev" },
+    { "id": 5, "post_id": 2, "user_id": "elena_web" },
+    { "id": 6, "post_id": 3, "user_id": "anna_data" },
+    { "id": 7, "post_id": 3, "user_id": "maria_js" },
+    { "id": 8, "post_id": 5, "user_id": "alex_dev" },
+    { "id": 9, "post_id": 6, "user_id": "dmitry_py" },
+    { "id": 10, "post_id": 7, "user_id": "igor_mobile" }
+  ],
+  "friendships": [
+    { "id": 1, "requester": "alex_dev", "addressee": "maria_js", "is_accepted": true },
+    { "id": 2, "requester": "dmitry_py", "addressee": "anna_data", "is_accepted": true },
+    { "id": 3, "requester": "igor_mobile", "addressee": "alex_dev", "is_accepted": true },
+    { "id": 4, "requester": "elena_web", "addressee": "maria_js", "is_accepted": false },
+    { "id": 5, "requester": "anna_data", "addressee": "igor_mobile", "is_accepted": true },
+    { "id": 6, "requester": "maria_js", "addressee": "dmitry_py", "is_accepted": false }
+  ]
+}
